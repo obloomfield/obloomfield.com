@@ -1,0 +1,8 @@
+{
+  "../components/layouts/main.js -> ../voxel-dog": {
+    "id": "./components/voxel-dog.js",
+    "files": [
+      "static/chunks/components_voxel-dog_js.js"
+    ]
+  }
+}

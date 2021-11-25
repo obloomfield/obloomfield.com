@@ -31,6 +31,7 @@ import {
 } from 'react-icons/io5'
 import thumbProj1 from '../public/images/links/prot2.png'
 import thumbProj2 from '../public/images/links/ladd2.png'
+import {Meta} from '../components/work'
 
 const Home = () => (
   <Layout>
@@ -96,6 +97,11 @@ const Home = () => (
           <NextLink href="/works">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               Projects
+            </Button>
+          </NextLink>
+          <NextLink href="/works">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              Puzzles
             </Button>
           </NextLink>
           <NextLink href="/works">
@@ -182,14 +188,18 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
             title="Proteinarium"
             thumbnail={thumbProj1}
           >
-            Responsive, modern protein-protein interaction analysis webapp. Actively used by numerous comp. bio researchers.
+            Responsive, modern protein-protein interaction analysis webapp. Actively used by numerous PPI researchers.
+            <br></br>
+            <Meta>Java</Meta><Meta>SQL</Meta><Meta>TypeScript</Meta><Meta>JavaScript</Meta><Meta>React</Meta>
           </GridItem>
           <GridItem
             href="https://obloomfield.github.io/laddtest/"
             title="Ladd Observatory"
             thumbnail={thumbProj2}
           >
-            Updated website for the Ladd Observatory @ Brown
+            Updated website for the Ladd Observatory @ Brown. Holds historical imaging and booking.
+            <br></br>
+            <Meta>HTML</Meta><Meta>CSS</Meta><Meta>JavaScript</Meta>
           </GridItem>
           <GridItem
             href="https://obloomfield.github.io/laddtest/"
@@ -197,6 +207,8 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
             thumbnail={thumbProj2}
           >
             Kind of meta, holds all my portfolio info in one place!
+            <br></br>
+            <Meta>React</Meta><Meta>Next.js</Meta><Meta>Chakra-UI</Meta>
           </GridItem>
           <GridItem
             href="https://obloomfield.github.io/laddtest/"
@@ -204,6 +216,8 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
             thumbnail={thumbProj2}
           >
             Updated Website for the Ladd Observatory @ Brown
+            <br></br>
+            <Meta>React</Meta><Meta>Next.js</Meta><Meta>Chakra-UI</Meta>
           </GridItem>
         </SimpleGrid>
       </Section>
@@ -303,7 +317,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
             <Link href="https://github.com/craftzdog" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="purple"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
                 @obloomfield
@@ -314,7 +328,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
             <Link href="https://twitter.com/inkdrop_app" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="purple"
                 leftIcon={<Icon as={IoLogoTwitter} />}
               >
                 @inkdrop_app
@@ -325,7 +339,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
             <Link href="https://twitter.com/craftzdog" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="purple"
                 leftIcon={<Icon as={IoLogoTwitter} />}
               >
                 @craftzdog
@@ -336,7 +350,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
             <Link href="https://instagram.com/craftzdog" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="purple"
                 leftIcon={<Icon as={IoLogoInstagram} />}
               >
                 @craftzdog
@@ -347,7 +361,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
             <Link href="https://discord.gg/QfsG5Kj" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="purple"
                 leftIcon={<Icon as={IoLogoDiscord} />}
               >
                 Discord
