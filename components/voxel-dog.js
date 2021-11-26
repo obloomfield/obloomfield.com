@@ -34,6 +34,9 @@ const VoxelDog = () => {
     }
   }, [renderer])
 
+  const [clock] = useState(new THREE.Clock())
+  const [mixer,setMixer] = useState(null)
+
   /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     const { current: container } = refContainer
@@ -74,24 +77,34 @@ const VoxelDog = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/dog.glb', {
+      loadGLTFModel(scene, '/puzzle2.glb', {
         receiveShadow: false,
         castShadow: false
-      }).then(() => {
-        animate()
+      }).then((obj) => {
+        const mixer = new THREE.AnimationMixer(obj)
+        // setMixer()
+        // mixer = ;
+        console.log(obj)
+        console.log(mixer)
+        obj.animations.forEach((clip) => {
+          mixer.clipAction(clip).play();
+        });
+        console.log(mixer)
+        animate(mixer)
         setLoading(false)
       })
-
+        
       let req = null
       let frame = 0
-      const animate = () => {
+      const animate = (mixer) => {
+        // console.log(mixer)
         req = requestAnimationFrame(animate)
 
         frame = frame <= 100 ? frame + 1 : frame
 
         if (frame <= 100) {
           const p = initialCameraPosition
-          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
+          const rotSpeed = -easeOutCirc(frame / 600) * Math.PI * 10
 
           camera.position.y = 10
           camera.position.x =
@@ -102,6 +115,10 @@ const VoxelDog = () => {
         } else {
           controls.update()
         }
+        var delta = clock.getDelta();
+        // console.log(mixer)
+        // console.log(mixer.update)
+        // if (mixer) mixer.update(delta);
 
         renderer.render(scene, camera)
       }

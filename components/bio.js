@@ -10,3 +10,8 @@ export const BioYear = styled.span`
   font-weight: bold;
   margin-right: 1em;
 `
+export const BioYearItal = styled.span`
+  font-style: italic;
+  margin-right: 1em;
+  margin-left: 0.5em;
+`

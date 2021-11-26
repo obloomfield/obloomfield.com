@@ -21,8 +21,8 @@ export const WorkImage = ({ src, alt }) => (
   <Image borderRadius="lg" w="full" src={src} alt={alt} mb={4} />
 )
 
-export const Meta = ({ children }) => (
-  <Badge colorScheme="purple" mr={2}>
+export const Meta = ({ colorScheme, fontSize, variant, children }) => (
+  <Badge colorScheme={colorScheme || 'purple'} mr={2} fontSize={fontSize || 'xs'} variant={variant || 'subtle'}>
     {children}
   </Badge>
 )
