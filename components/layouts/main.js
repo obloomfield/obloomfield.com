@@ -3,11 +3,11 @@ import dynamic from 'next/dynamic'
 import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
-import VoxelDogLoader from '../voxel-dog-loader'
+import TopPuzzleLoader from '../top-puzzle-loader'
 
-const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
+const LazyTopPuzzle = dynamic(() => import('../top-puzzle'), {
   ssr: false,
-  loading: () => <VoxelDogLoader />
+  loading: () => <TopPuzzleLoader />
 })
 
 const Main = ({ children, router }) => {
@@ -17,13 +17,11 @@ const Main = ({ children, router }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Orion's Site" />
         <meta name="author" content="Orion Bloomfield" />
-        {/* <meta name="author" content="craftzdog" /> */}
+
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon-removebg.ico" type="image/x-icon" />
         <meta name="twitter:card" content="summary_large_image" />
-        {/* <meta name="twitter:site" content="@craftzdog" /> */}
-        {/* <meta name="twitter:creator" content="@craftzdog" /> */}
-        {/* <meta name="twitter:image" content="/card.png" /> */}
+
         <meta property="og:site_name" content="Orion's Site" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/card.png" />
@@ -33,7 +31,7 @@ const Main = ({ children, router }) => {
       <NavBar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
-        <LazyVoxelDog />
+        <LazyTopPuzzle />
 
         {children}
 

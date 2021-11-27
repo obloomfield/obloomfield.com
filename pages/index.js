@@ -519,17 +519,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
               </Button>
             </Link>
           </ListItem>
-          {/* <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoTwitter} />}
-              >
-                @craftzdog
-              </Button>
-            </Link>
-          </ListItem> */}
+
           <ListItem>
             <Link href="https://www.instagram.com/orion.bloomfield/" target="_blank">
               <Button
@@ -541,28 +531,12 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
               </Button>
             </Link>
           </ListItem>
-          {/* <ListItem>
-            <Link href="https://discord.gg/QfsG5Kj" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoDiscord} />}
-              >
-                Discord
-              </Button>
-            </Link>
-          </ListItem> */}
+
         </List>
 
         
 
-        {/* <Box align="center" my={4}>
-          <NextLink href="/posts">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
-            </Button>
-          </NextLink>
-        </Box> */}
+
       </Section>
     </Container>
   </Layout>
