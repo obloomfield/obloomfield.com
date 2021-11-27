@@ -1,36 +1,7 @@
+<<<<<<< HEAD
 # Orion's Home Site
+=======
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8246b034-1180-4f48-81b9-aabdbf101737/deploy-status)](https://app.netlify.com/sites/jovial-aryabhata-47767c/deploys)
+>>>>>>> c07d6eaa156a5cb76334107d53ac2d36da3be30d
 
-[https://www.craftz.dog/](https://www.craftz.dog/)
-
-## Tutorial
-
-Watch how I built this website on YouTube:
-
-[![YouTube thumbnail](./doc/thumb.png)](https://www.youtube.com/watch?v=bSMZgXzC9AA)
-
-## Stack
-
-- [Next.js](https://nextjs.org/) - A React framework with hybrid static & server rendering, and route pre-fetching, etc.
-- [Chakra UI](https://chakra-ui.com/) - A simple, modular and accessible component library for React
-- [Three.js](https://threejs.org/) - 3D library for JavaScript
-- [Framer Motion](https://www.framer.com/motion/) - An animation library for React
-
-## Project structure
-
-```
-$PROJECT_ROOT
-│   # Page files
-├── pages
-│   # React component files
-├── components
-│   # Non-react modules
-├── lib
-│   # Static files for images and 3d model file
-└── public
-```
-
----
-
-Looking for a Markdown note-taking app? Check out my app called Inkdrop:
-
-[![Inkdrop](https://github.com/craftzdog/dotfiles-public/raw/master/images/inkdrop.png)](https://www.inkdrop.app/)
+# Orion's Portfolio Site!!
