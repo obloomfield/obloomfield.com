@@ -10,14 +10,15 @@ import thumbFinancialGoal from '../public/images/contents/blog-financial-goal.pn
 import thumbHowToPriceYourself from '../public/images/contents/blog-how-to-price-yourself.jpg'
 import thumb50xFaster from '../public/images/contents/youtube-50x-faster.jpg'
 
-const Posts = () => (
-  <Layout title="Posts">
+const Puzzles = () => (
+  <Layout title="Puzzles">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Popular Posts
+        Popular Puzzles
       </Heading>
 
-      <Section delay={0.1}>
+      COMING SOON!
+      {/* <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             title="My Fish workflow"
@@ -60,9 +61,9 @@ const Posts = () => (
             href="https://www.youtube.com/watch?v=vj723NlrIQc"
           />
         </SimpleGrid>
-      </Section>
+      </Section> */}
     </Container>
   </Layout>
 )
 
-export default Posts
+export default Puzzles

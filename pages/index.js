@@ -32,7 +32,13 @@ import {
   IoGitMergeSharp,
   IoTelescope,
   IoExtensionPuzzle,
+  IoBulb,
+  IoLogoFacebook,
+  IoLogoLinkedin,
 } from 'react-icons/io5'
+import {GiFly} from 'react-icons/gi'
+import {FaChalkboardTeacher, FaPuzzlePiece, FaDoorOpen} from 'react-icons/fa'
+import {MdLibraryMusic, MdQueueMusic} from 'react-icons/md'
 import thumbProj1 from '../public/images/links/prot2.png'
 import thumbProj2 from '../public/images/links/ladd2.png'
 import {Meta} from '../components/work'
@@ -40,15 +46,6 @@ import {Meta} from '../components/work'
 const Home = () => (
   <Layout>
     <Container>
-      {/* <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-      >
-        Hello, I&apos;m a full-stack developer based in Japan!
-      </Box> */}
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
@@ -83,36 +80,26 @@ const Home = () => (
           textAlign="center"
         >
           
-          {/* <Image
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            maxWidth="100px"
-            display="inline-block"
-            borderRadius="full"
-            src="/images/takuya.jpg"
-            alt="Profile image"
-          /> */}
         </Box>
       </Box>
       
       <Box align="center" my={4} >
         <HStack spacing="10px" justify="center">
-          <NextLink href="/works">
+          <NextLink href="/projects">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               Projects
             </Button>
           </NextLink>
-          <NextLink href="/works">
+          <NextLink href="/puzzles">
             <Button rightIcon={<IoExtensionPuzzle />} colorScheme="teal">
               Puzzles
             </Button>
           </NextLink>
-          <NextLink href="/works">
+          <Link href="resume_orion_bloomfield.pdf" target='_blank'>
             <Button rightIcon={<ExternalLinkIcon />} colorScheme="teal">
               Résumé
             </Button>
-          </NextLink>
+          </Link>
         </HStack>
       </Box>
 
@@ -121,7 +108,7 @@ const Home = () => (
           About
         </Heading>
         <Paragraph>
-          WORK ON THIS INTRO
+          {/* WORK ON THIS INTRO */}
           Hi there! I&apos;m Orion, a second-year student at Brown University. Through research opportunities
           and personal work, I am experienced building full-stack platforms and visualizations for 
           computational biology and other fields
@@ -249,15 +236,15 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
               <b>Research Assistant</b>
           </Text></Center>
           <Center><Text fontSize={"lg"}>
-              <Link href='https://sites.brown.edu/gmilab/'>Dr. Uzun's Genomics and Machine Intelligence Lab</Link>
+              <Link href='https://sites.brown.edu/gmilab/' target="_blank">Dr. Uzun's Genomics and Machine Intelligence Lab</Link>
           </Text></Center>
           <Center><Text fontSize={"md"}>
-              <i>Care New England | Aug. 2024 - Present</i>
+              <i>Care New England | August 2021 - Present</i>
           </Text></Center>
           <UnorderedList ml="30px"fontSize={"sm"}>
               <ListItem >Actively innovating on a protein-protein interaction analytics framework that is already used by hundreds of researchers.</ListItem>
               <ListItem >Implemented server-side analysis optimizations which save research scientists in the PPI field hours of computation.</ListItem>
-              <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>  
+              <ListItem >Building an <Link href="https://proteinarium.brown.edu" target="_blank">interactive web application</Link> that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>  
         </UnorderedList>
         </Box>
         <Box
@@ -272,10 +259,10 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
               <b>Observatory Assistant</b>
           </Text></Center>
           <Center><Text fontSize={"lg"}>
-              <Link href='https://www.brown.edu/Departments/Physics/Ladd/'>Ladd Observatory</Link>
+              <Link href='https://www.brown.edu/Departments/Physics/Ladd/' target="_blank">Ladd Observatory</Link>
           </Text></Center>
           <Center><Text fontSize={"md"}>
-              <i>Brown U. Dept. of Physics | Aug. 2024 - Present</i>
+              <i>Brown U. Dept. of Physics | August 2021 - Present</i>
           </Text></Center>
           <UnorderedList ml="30px"fontSize={"sm"}>
               <ListItem >Lead group observatory viewing sessions, operating multiple sets of telescope equipment.</ListItem>
@@ -283,12 +270,6 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
               {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
         </UnorderedList>
         </Box>
-      </Section>
-
-      <Section delay={0.25}>
-        <Heading as="h3" variant="section-title">
-          Leadership
-        </Heading>
         <Box
         borderRadius="lg"
         mb={6}
@@ -296,23 +277,25 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
         textAlign="left"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
-        <BioSection fontSize={"sm"}>
-          <BioYear >Research Assistant</BioYear>
-          Dr. Uzun's Genomics and Machine Intelligence Lab
-        </BioSection>
-        <BioSection fontSize={"sm"}>
-          <BioYearItal ></BioYearItal>
-          <i>Care New England</i> 
-        </BioSection>
-        <UnorderedList ml="30px"fontSize={"sm"}>
-            <ListItem >Actively innovating on a protein-protein interaction analytics framework that is already used by hundreds of researchers.</ListItem>
-            <ListItem >Actively innovating on a protein-protein interaction analytics framework that is already used by hundreds of researchers.</ListItem>
-          </UnorderedList>
-          
+          <Center><Icon as={GiFly} w={8} h={8}/></Center>
+          <Center><Text fontSize={"lg"}>
+              <b>Summer Research Intern</b>
+          </Text></Center>
+          <Center><Text fontSize={"lg"}>
+              <Link href='https://seungkimlab.stanford.edu/' target="_blank">Dr. Seung Kim's Developmental Biology Lab</Link>
+          </Text></Center>
+          <Center><Text fontSize={"md"}>
+              <i>Stanford U. School of Medicine | July 2019 - Aug. 2019</i>
+          </Text></Center>
+          <UnorderedList ml="30px"fontSize={"sm"}>
+              <ListItem >Utilized iPCR protocols to determine the location and orientation of novel p-element insertions in <i>Drosophila</i></ListItem>
+              <ListItem >Created a <Link href="https://obloomfield.github.io/sgovi-pSeq/index.html" target="_blank">site</Link> to aid in the systematic analysis of PCR reads and expression data.</ListItem>
+              <ListItem >Taught rotating high school biology teachers the basics of fly pushing and how to adopt it in a classroom setting.</ListItem>  
+        </UnorderedList>
         </Box>
       </Section>
 
-      <Section delay={0.3}>
+      <Section delay={0.25}>
         <Heading as="h3" variant="section-title">
           Service
         </Heading>
@@ -323,19 +306,148 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
         textAlign="left"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
-        <BioSection fontSize={"sm"}>
-          <BioYear >Research Assistant</BioYear>
-          Dr. Uzun's Genomics and Machine Intelligence Lab
-        </BioSection>
-        <BioSection fontSize={"sm"}>
-          <BioYearItal ></BioYearItal>
-          <i>Care New England</i> 
-        </BioSection>
-        <UnorderedList ml="30px"fontSize={"sm"}>
-            <ListItem >Actively innovating on a protein-protein interaction analytics framework that is already used by hundreds of researchers.</ListItem>
-            <ListItem >Actively innovating on a protein-protein interaction analytics framework that is already used by hundreds of researchers.</ListItem>
-          </UnorderedList>
-          
+          <Center><Icon as={IoBulb} w={8} h={8}/></Center>
+          <Center><Text fontSize={"lg"}>
+              <b>Lead Organizer, Instructor</b>
+          </Text></Center>
+          <Center><Text fontSize={"lg"}>
+              <Link href='https://www.pensos.org' target="_blank">Pensos Summer Academy</Link>
+          </Text></Center>
+          <Center><Text fontSize={"md"}>
+              <i>Startup - Nonprofit | June 2021 - Present</i>
+          </Text></Center>
+          <UnorderedList ml="30px"fontSize={"sm"}>
+              <ListItem >Built lesson plans and taught 6 weeks of virtual coursework on <i>Cryptography, Game Theory</i> to students aged 13-15.</ListItem>
+              <ListItem >Provided free summer classes for over 100 students from underprivileged neighborhoods of NYC during the pandemic.</ListItem>
+              {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
+        </UnorderedList>
+        </Box>
+        <Box
+        borderRadius="lg"
+        mb={6}
+        p={3}
+        textAlign="left"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        >
+          <Center><Icon as={FaChalkboardTeacher} w={8} h={8}/></Center>
+          <Center><Text fontSize={"lg"}>
+              <b>Online Tutor</b>
+          </Text></Center>
+          <Center><Text fontSize={"lg"}>
+              <Link href='https://www.frutor.us' target="_blank">Frutor LLC</Link>
+          </Text></Center>
+          <Center><Text fontSize={"md"}>
+              <i>Startup - For-profit | July 2021 - Present</i>
+          </Text></Center>
+          <UnorderedList ml="30px"fontSize={"sm"}>
+              <ListItem >Tutoring high school level Mathematics, Chemistry, Biology, Computer Science, general test-prep, and college essay writing</ListItem>
+              {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
+        </UnorderedList>
+        </Box>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Activities
+        </Heading>
+        <Box
+        borderRadius="lg"
+        mb={6}
+        p={3}
+        textAlign="left"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        >
+          <Center><Icon as={FaPuzzlePiece} w={8} h={8}/></Center>
+          <Center><Text fontSize={"lg"}>
+              <b>Founder, Lead Organizer and Writer</b>
+          </Text></Center>
+          <Center><Text fontSize={"lg"}>
+              <Link href='http://brownpuzzleclub.com/' target="_blank">Brown Puzzle Club</Link>
+          </Text></Center>
+          <Center><Text fontSize={"md"}>
+              <i>Brown U. Student Activities | August 2021 - Present</i>
+          </Text></Center>
+          <UnorderedList ml="30px"fontSize={"sm"}>
+              <ListItem >Organize meetings, lead discussions with ~15 regular members on self-made or curated online word and logic puzzles. <br></br><Text fontSize={'xs'}>(More information on <Link href="/puzzles">Puzzles</Link> page!)</Text></ListItem>
+              <ListItem >Plan additional sessions for competing in online "Puzzle Hunt."</ListItem>
+              <ListItem >Lead meetings and collaboration of executive team.</ListItem>
+              <ListItem >Coordinate team writing puzzles for upcoming "Brown Puzzle Hunt."</ListItem>
+              <ListItem >Developing the <Link href="http://brownpuzzleclub.com/" targe="_blank">front-facing website</Link> and <Link href="http://obloomfield.pythonanywhere.com/" target="_blank">competition website</Link>. Both are WIP</ListItem>
+              {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
+        </UnorderedList>
+        </Box>
+        <Box
+        borderRadius="lg"
+        mb={6}
+        p={3}
+        textAlign="left"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        >
+          <Center><Icon as={FaDoorOpen} w={8} h={8}/></Center>
+          <Center><Text fontSize={"lg"}>
+              <b>Co-founder, Organizer</b>
+          </Text></Center>
+          <Center><Text fontSize={"lg"}>
+              <Link href='https://www.facebook.com/rabblerooms/' target="_blank">Rabble Rooms Virtual Escape Rooms</Link>
+          </Text></Center>
+          <Center><Text fontSize={"md"}>
+              <i>Startup - For-profit | November 2020 - June 2021</i>
+          </Text></Center>
+          <UnorderedList ml="30px"fontSize={"sm"}>
+              <ListItem >Designed and implemented interactive virtual escape room content for clubs at numerous major universities. Ran event for a total of ~500 students and student organizers</ListItem>
+              <ListItem >Awarded 6,000 dollars in NYU Entrepreneurial Institute Startup Sprint, 1 of 13 teams chosen from applicant pool of 160. Only undergraduate team admitted.</ListItem>
+              <ListItem >Awarded <Link href='https://hgf.org/programs/entrepreneurship-initiative' target='_blank'>Harold Grinspoon</Link> entrepreneurial spirit award</ListItem>
+              {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
+        </UnorderedList>
+        </Box>
+        <Box
+        borderRadius="lg"
+        mb={6}
+        p={3}
+        textAlign="left"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        >
+          <Center><Icon as={MdLibraryMusic} w={8} h={8}/></Center>
+          <Center><Text fontSize={"lg"}>
+              <b>Business Manager</b>
+          </Text></Center>
+          <Center><Text fontSize={"lg"}>
+              <Link href='http://thehigherkeys.com/' target="_blank">The Higher Keys</Link>
+          </Text></Center>
+          <Center><Text fontSize={"md"}>
+              <i>Brown U. A Capella | February 2021 - Present</i>
+          </Text></Center>
+          <UnorderedList ml="30px"fontSize={"sm"}>
+              <ListItem >Coordinate local gigs with student activites, other groups, and campus safety, as well as touring gigs with the venues associated.</ListItem>
+              <ListItem >Handle funding and reimbursement of group activities.</ListItem>
+              <ListItem >With the group,Sing bass and arrange music tour and record albums.</ListItem>
+              <ListItem >Maintain the <Link href="http://thehigherkeys.com/" target="_blank">website</Link>.</ListItem>
+              {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
+        </UnorderedList>
+        </Box>
+        <Box
+        borderRadius="lg"
+        mb={6}
+        p={3}
+        textAlign="left"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        >
+          <Center><Icon as={MdQueueMusic} w={8} h={8}/></Center>
+          <Center><Text fontSize={"lg"}>
+              <b>Concert Manager</b>
+          </Text></Center>
+          <Center><Text fontSize={"lg"}>
+              <Link href='https://www.brown.edu/Departments/Music/sites/chorus/' target="_blank">Brown University Chorus</Link>
+          </Text></Center>
+          <Center><Text fontSize={"md"}>
+              <i>Brown U. Music Department | February 2021 - Present</i>
+          </Text></Center>
+          <UnorderedList ml="30px"fontSize={"sm"}>
+              <ListItem >Coordinate the setup and takedown of each concert, as well as equipment moving for each dress rehearsal.</ListItem>
+              <ListItem >Sing barritone in the chorus and tour yearly.</ListItem>
+              {/* <ListItem >Maintain the <Link href="http://thehigherkeys.com/" target="_blank">website</Link>.</ListItem> */}
+              {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
+        </UnorderedList>
         </Box>
       </Section>
 
@@ -343,7 +455,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
         <Heading as="h3" variant="section-title">
           Skills
         </Heading>
-        <Meta colorScheme={"teal"} fontSize={"md"} variant={"outline"}>Test</Meta><Meta colorScheme={"white"} fontSize={"md"}>Test</Meta><Meta colorScheme={"white"} fontSize={"md"}>Test</Meta>
+        <Meta colorScheme={"teal"} fontSize={"md"}>Test</Meta><Meta colorScheme={"white"} fontSize={"md"}>Test</Meta><Meta colorScheme={"white"} fontSize={"md"}>Test</Meta>
         <Meta colorScheme={"white"} fontSize={"md"}>Test</Meta><Meta colorScheme={"white"} fontSize={"md"}>Test</Meta><Meta colorScheme={"white"} fontSize={"md"}>Test</Meta>
         <Meta colorScheme={"white"} fontSize={"md"}>Test</Meta><Meta colorScheme={"white"} fontSize={"md"}>Test</Meta><Meta colorScheme={"white"} fontSize={"md"}>Test</Meta>
       </Section>
@@ -375,7 +487,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/obloomfield" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -386,17 +498,28 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://www.linkedin.com/in/orion-bloomfield-77a31b179/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<Icon as={IoLogoTwitter} />}
+                leftIcon={<Icon as={IoLogoLinkedin} />}
               >
-                @inkdrop_app
+                @orion-bloomfield
               </Button>
             </Link>
           </ListItem>
           <ListItem>
+            <Link href="https://www.facebook.com/orion.bloomfield" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoFacebook} />}
+              >
+                @orion.bloomfield
+              </Button>
+            </Link>
+          </ListItem>
+          {/* <ListItem>
             <Link href="https://twitter.com/craftzdog" target="_blank">
               <Button
                 variant="ghost"
@@ -406,19 +529,19 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
                 @craftzdog
               </Button>
             </Link>
-          </ListItem>
+          </ListItem> */}
           <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
+            <Link href="https://www.instagram.com/orion.bloomfield/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoInstagram} />}
               >
-                @craftzdog
+                @orion.bloomfield
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
+          {/* <ListItem>
             <Link href="https://discord.gg/QfsG5Kj" target="_blank">
               <Button
                 variant="ghost"
@@ -428,7 +551,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
                 Discord
               </Button>
             </Link>
-          </ListItem>
+          </ListItem> */}
         </List>
 
         

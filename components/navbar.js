@@ -71,15 +71,15 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
-            Works
+          <LinkItem href="/projects" path={path}>
+            Projects
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
+          <LinkItem href="/puzzles" path={path}>
+            Puzzles
           </LinkItem>
           <LinkItem
             _target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
+            href="https://github.com/obloomfield"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -106,18 +106,21 @@ const Navbar = props => {
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
+                <NextLink href="/projects" passHref>
+                  <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
-                <NextLink href="/posts" passHref>
+                <NextLink href="/puzzles" passHref>
+                  <MenuItem as={Link}>Puzzles</MenuItem>
+                </NextLink>
+                <NextLink href="https://github.com/obloomfield" passHref>
                   <MenuItem as={Link}>Github Feed</MenuItem>
                 </NextLink>
-                <MenuItem
+                {/* <MenuItem
                   as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
+                  href="https://github.com/obloomfield"
                 >
-                  View Source
-                </MenuItem>
+                  Github Feed
+                </MenuItem> */}
               </MenuList>
             </Menu>
           </Box>
