@@ -41,6 +41,9 @@ import {FaChalkboardTeacher, FaPuzzlePiece, FaDoorOpen} from 'react-icons/fa'
 import {MdLibraryMusic, MdQueueMusic} from 'react-icons/md'
 import thumbProj1 from '../public/images/links/prot2.png'
 import thumbProj2 from '../public/images/links/ladd2.png'
+import thumbProj3 from '../public/images/links/counterpointer3.png'
+import thumbProj4 from '../public/images/links/meta2.png'
+import thumbProj5 from '../public/images/links/bpc.png'
 import {Meta} from '../components/work'
 
 const Home = () => (
@@ -111,8 +114,7 @@ const Home = () => (
           {/* WORK ON THIS INTRO */}
           Hi there! I&apos;m Orion, a second-year student at Brown University. Through research opportunities
           and personal work, I am experienced building full-stack platforms and visualizations for 
-          computational biology and other fields
-          utilizing big data, as well as working on general software engineering webapps for 
+          computational biology, as well as working on general software engineering webapps for 
           music theory, crypto, and puzzle competitons.
           <br></br><br></br>
           I am excited for a career in biotechnology and software engineering, where I can utilize my
@@ -178,7 +180,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Current Projects
+          Current Projects (WIP)
         </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
@@ -190,7 +192,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
             <br></br>
             <Meta colorScheme="red">Java</Meta><Meta colorScheme="red">SQL</Meta><Meta colorScheme="purple">TypeScript</Meta><Meta colorScheme="purple">JavaScript</Meta><Meta colorScheme="blue">React</Meta>
           </GridItem>
-          <GridItem
+          {/* <GridItem
             href="https://obloomfield.github.io/laddtest/"
             title="Ladd Observatory"
             thumbnail={thumbProj2}
@@ -198,11 +200,20 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
             Updated website for the Ladd Observatory @ Brown. Holds historical imaging and booking.
             <br></br>
             <Meta>HTML</Meta><Meta>CSS</Meta><Meta>JavaScript</Meta>
+          </GridItem> */}
+          <GridItem
+            href="https://www.counterpointer.app"
+            title="CounterPointer"
+            thumbnail={thumbProj3}
+          >
+            Interactive teaching tool for music theory students generating and resolving species counterpoint. Frontend Lead
+            <br></br>
+            <Meta colorScheme="red">Java</Meta><Meta colorScheme="purple">TypeScript</Meta><Meta colorScheme="purple">JavaScript</Meta><Meta colorScheme="blue">React</Meta>
           </GridItem>
           <GridItem
-            href="https://obloomfield.github.io/laddtest/"
+            href="https://www.obloomfield.com"
             title="This Site"
-            thumbnail={thumbProj2}
+            thumbnail={thumbProj4}
           >
             Kind of meta, holds all my portfolio info in one place!
             <br></br>
@@ -211,7 +222,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
           <GridItem
             href="https://obloomfield.github.io/laddtest/"
             title="Brown Puzzle Club"
-            thumbnail={thumbProj2}
+            thumbnail={thumbProj5}
           >
             Responsive website for team login, leaderboard, and puzzle hunt content.
             <br></br>
@@ -297,7 +308,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
 
       <Section delay={0.25}>
         <Heading as="h3" variant="section-title">
-          Service
+          Teaching
         </Heading>
         <Box
         borderRadius="lg"
@@ -455,9 +466,28 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
         <Heading as="h3" variant="section-title">
           Skills
         </Heading>
-        <Meta colorScheme={"teal"} fontSize={"md"}>Test</Meta><Meta colorScheme={"white"} fontSize={"md"}>Test</Meta><Meta colorScheme={"white"} fontSize={"md"}>Test</Meta>
-        <Meta colorScheme={"white"} fontSize={"md"}>Test</Meta><Meta colorScheme={"white"} fontSize={"md"}>Test</Meta><Meta colorScheme={"white"} fontSize={"md"}>Test</Meta>
-        <Meta colorScheme={"white"} fontSize={"md"}>Test</Meta><Meta colorScheme={"white"} fontSize={"md"}>Test</Meta><Meta colorScheme={"white"} fontSize={"md"}>Test</Meta>
+        <Meta colorScheme={"teal"} fontSize={"md"}>Languages and Technology</Meta> <br></br>
+        <Meta colorScheme={"white"} fontSize={"sm"}>Java</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Javascript</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Python</Meta>
+        <Meta colorScheme={"white"} fontSize={"sm"}>Typescript</Meta><Meta colorScheme={"white"} fontSize={"sm"}>R</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Deep Learning</Meta>
+        <Meta colorScheme={"white"} fontSize={"sm"}>Tensorflow</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Numpy</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Golang</Meta>
+        <Meta colorScheme={"white"} fontSize={"sm"}>Tensorflow</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Numpy</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Golang</Meta>
+        <Meta colorScheme={"white"} fontSize={"sm"}>C++</Meta><Meta colorScheme={"white"} fontSize={"sm"}>SQL</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Docker</Meta>
+        <Meta colorScheme={"white"} fontSize={"sm"}>React</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Next.js</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Django</Meta>
+        <Meta colorScheme={"white"} fontSize={"sm"}>Git</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Decentralized Networks</Meta><Meta colorScheme={"white"} fontSize={"sm"}>DeFi</Meta>
+        <Meta colorScheme={"white"} fontSize={"sm"}>Cryptography</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Cybersecurity</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Unit Testing</Meta>
+        <br></br><br></br>
+        <Meta colorScheme={"teal"} fontSize={"md"}>Scientific</Meta> <br></br>
+        <Meta colorScheme={"white"} fontSize={"sm"}>Proteomics</Meta><Meta colorScheme={"white"} fontSize={"sm"}>’Omics data</Meta><Meta colorScheme={"white"} fontSize={"sm"}>PCR</Meta>
+        <Meta colorScheme={"white"} fontSize={"sm"}>iPCR</Meta><Meta colorScheme={"white"} fontSize={"sm"}>IHC</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Spectroscopy</Meta>
+        <Meta colorScheme={"white"} fontSize={"sm"}>Drosophila</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Dissection</Meta><Meta colorScheme={"white"} fontSize={"sm"}>BLAST</Meta>
+        <Meta colorScheme={"white"} fontSize={"sm"}>Gel Electrophoresis</Meta>
+        <br></br><br></br>
+        <Meta colorScheme={"teal"} fontSize={"md"}>Design</Meta> <br></br>
+        <Meta colorScheme={"white"} fontSize={"sm"}>Photoshop</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Canva</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Figma</Meta>
+        <Meta colorScheme={"white"} fontSize={"sm"}>LaTeX</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Adobe Premiere</Meta>
+        <br></br><br></br>
+        <Meta colorScheme={"teal"} fontSize={"md"}>Miscellaneous</Meta> <br></br>
+        <Meta colorScheme={"white"} fontSize={"sm"}>Puzzle Competitons</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Teaching and Tutoring</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Choral Signing</Meta>
       </Section>
 
       {/* <Section delay={0.3}>
