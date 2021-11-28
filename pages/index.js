@@ -16,6 +16,7 @@ import {
   Icon,
   useColorModeValue,
   UnorderedList,
+  Badge,
   HStack
 } from '@chakra-ui/react'
 import { ChevronRightIcon, ExternalLinkIcon, InfoIcon } from '@chakra-ui/icons'
@@ -123,7 +124,7 @@ const Home = () => (
           In my free time, I sing in choir and acapella, tutor high schoolers in math and science, and write puzzles for competitions 
           and escape rooms.
           <br></br><br></br>
-          I hope this site is an effective medium to hold my cs project and puzzle writing content in one cohesive package. 
+          I hope this site is an effective medium to hold my cs project and puzzle writing content in one cohesive package!
         </Paragraph>
         {/* <Box align="center" my={4}>
           <NextLink href="/works">
@@ -180,7 +181,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Current Projects (WIP)
+          Current Projects
         </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
@@ -212,16 +213,16 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
           </GridItem>
           <GridItem
             href="https://www.obloomfield.com"
-            title="This Site"
+            title="obloomfield.com"
             thumbnail={thumbProj4}
           >
-            Kind of meta, holds all my portfolio info in one place!
+            This site; kind of meta, holds all my portfolio info in one place!
             <br></br>
             <Meta colorScheme="purple">JavaScript</Meta><Meta colorScheme="blue">React</Meta><Meta colorScheme="blue">Next.js</Meta><Meta colorScheme="blue">Chakra-UI</Meta><Meta colorScheme="blue">Three.js</Meta>
           </GridItem>
           <GridItem
-            href="https://obloomfield.github.io/laddtest/"
-            title="Brown Puzzle Club"
+            href="http://obloomfield.pythonanywhere.com/"
+            title="Brown Puzzle Hunt"
             thumbnail={thumbProj5}
           >
             Responsive website for team login, leaderboard, and puzzle hunt content.
@@ -467,27 +468,27 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
           Skills
         </Heading>
         <Meta colorScheme={"teal"} fontSize={"md"}>Languages and Technology</Meta> <br></br>
-        <Meta colorScheme={"white"} fontSize={"sm"}>Java</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Javascript</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Python</Meta>
-        <Meta colorScheme={"white"} fontSize={"sm"}>Typescript</Meta><Meta colorScheme={"white"} fontSize={"sm"}>R</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Deep Learning</Meta>
-        <Meta colorScheme={"white"} fontSize={"sm"}>Tensorflow</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Numpy</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Golang</Meta>
-        <Meta colorScheme={"white"} fontSize={"sm"}>Tensorflow</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Numpy</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Golang</Meta>
-        <Meta colorScheme={"white"} fontSize={"sm"}>C++</Meta><Meta colorScheme={"white"} fontSize={"sm"}>SQL</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Docker</Meta>
-        <Meta colorScheme={"white"} fontSize={"sm"}>React</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Next.js</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Django</Meta>
-        <Meta colorScheme={"white"} fontSize={"sm"}>Git</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Decentralized Networks</Meta><Meta colorScheme={"white"} fontSize={"sm"}>DeFi</Meta>
-        <Meta colorScheme={"white"} fontSize={"sm"}>Cryptography</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Cybersecurity</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Unit Testing</Meta>
+        <Badge mr={2}>Java</Badge><Badge mr={2}>Javascript</Badge><Badge mr={2}>Python</Badge>
+        <Badge mr={2}>Typescript</Badge><Badge mr={2}>R</Badge><Badge mr={2}>Deep Learning</Badge>
+        <Badge mr={2}>Tensorflow</Badge><Badge mr={2}>Numpy</Badge><Badge mr={2}>Golang</Badge>
+        <Badge mr={2}>Tensorflow</Badge><Badge mr={2}>Numpy</Badge><Badge mr={2}>Golang</Badge>
+        <Badge mr={2}>C++</Badge><Badge mr={2}>SQL</Badge><Badge mr={2}>Docker</Badge>
+        <Badge mr={2}>React</Badge><Badge mr={2}>Next.js</Badge><Badge mr={2}>Django</Badge>
+        <Badge mr={2}>Git</Badge><Badge mr={2}>Decentralized Networks</Badge><Badge mr={2}>DeFi</Badge>
+        <Badge mr={2}>Cryptography</Badge><Badge mr={2}>Cybersecurity</Badge><Badge mr={2}>Unit Testing</Badge>
         <br></br><br></br>
         <Meta colorScheme={"teal"} fontSize={"md"}>Scientific</Meta> <br></br>
-        <Meta colorScheme={"white"} fontSize={"sm"}>Proteomics</Meta><Meta colorScheme={"white"} fontSize={"sm"}>’Omics data</Meta><Meta colorScheme={"white"} fontSize={"sm"}>PCR</Meta>
-        <Meta colorScheme={"white"} fontSize={"sm"}>iPCR</Meta><Meta colorScheme={"white"} fontSize={"sm"}>IHC</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Spectroscopy</Meta>
-        <Meta colorScheme={"white"} fontSize={"sm"}>Drosophila</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Dissection</Meta><Meta colorScheme={"white"} fontSize={"sm"}>BLAST</Meta>
-        <Meta colorScheme={"white"} fontSize={"sm"}>Gel Electrophoresis</Meta>
+        <Badge mr={2}>Proteomics</Badge><Badge mr={2}>’Omics data</Badge><Badge mr={2}>PCR</Badge>
+        <Badge mr={2}>iPCR</Badge><Badge mr={2}>IHC</Badge><Badge mr={2}>Spectroscopy</Badge>
+        <Badge mr={2}>Drosophila</Badge><Badge mr={2}>Dissection</Badge><Badge mr={2}>BLAST</Badge>
+        <Badge mr={2}>Gel Electrophoresis</Badge>
         <br></br><br></br>
         <Meta colorScheme={"teal"} fontSize={"md"}>Design</Meta> <br></br>
-        <Meta colorScheme={"white"} fontSize={"sm"}>Photoshop</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Canva</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Figma</Meta>
-        <Meta colorScheme={"white"} fontSize={"sm"}>LaTeX</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Adobe Premiere</Meta>
+        <Badge mr={2}>Photoshop</Badge><Badge mr={2}>Canva</Badge><Badge mr={2}>Figma</Badge>
+        <Badge mr={2}>LaTeX</Badge><Badge mr={2}>Adobe Premiere</Badge>
         <br></br><br></br>
         <Meta colorScheme={"teal"} fontSize={"md"}>Miscellaneous</Meta> <br></br>
-        <Meta colorScheme={"white"} fontSize={"sm"}>Puzzle Competitons</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Teaching and Tutoring</Meta><Meta colorScheme={"white"} fontSize={"sm"}>Choral Signing</Meta>
+        <Badge mr={2}>Puzzle Competitons</Badge><Badge mr={2}>Teaching and Tutoring</Badge><Badge mr={2}>Choral Signing</Badge>
       </Section>
 
       {/* <Section delay={0.3}>
