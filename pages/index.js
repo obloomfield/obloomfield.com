@@ -64,7 +64,7 @@ const Home = () => (
           <Center>
             <p>CS + APMA-Bio{' '}
             <Link href="https://www.brown.edu/" target="_blank" >
-               @Brown U
+               @Brown U.
             </Link>
           </p>
           </Center>
@@ -185,7 +185,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
         </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            href="https://proteinarium.brown.edu/"
+            href="/projects/proteinarium"
             title="Proteinarium"
             thumbnail={thumbProj1}
           >
@@ -203,7 +203,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
             <Meta>HTML</Meta><Meta>CSS</Meta><Meta>JavaScript</Meta>
           </GridItem> */}
           <GridItem
-            href="https://www.counterpointer.app"
+            href="/projects/counterpointer"
             title="CounterPointer"
             thumbnail={thumbProj3}
           >
@@ -212,7 +212,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
             <Meta colorScheme="red">Java</Meta><Meta colorScheme="purple">TypeScript</Meta><Meta colorScheme="purple">JavaScript</Meta><Meta colorScheme="blue">React</Meta>
           </GridItem>
           <GridItem
-            href="https://www.obloomfield.com"
+            href="/projects/this-site"
             title="obloomfield.com"
             thumbnail={thumbProj4}
           >
@@ -221,7 +221,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
             <Meta colorScheme="purple">JavaScript</Meta><Meta colorScheme="blue">React</Meta><Meta colorScheme="blue">Next.js</Meta><Meta colorScheme="blue">Chakra-UI</Meta><Meta colorScheme="blue">Three.js</Meta>
           </GridItem>
           <GridItem
-            href="http://obloomfield.pythonanywhere.com/"
+            href="/projects/bph"
             title="Brown Puzzle Hunt"
             thumbnail={thumbProj5}
           >
