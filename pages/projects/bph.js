@@ -18,7 +18,7 @@ const Work = () => (
   <Layout title="Brown Puzzle Hunt">
     <Container>
       <Title>
-        obloomfield.com <Badge>Aug. 2021 - Present</Badge>
+        Brown Puzzle Club <Badge>Aug. 2021 - Present</Badge>
       </Title>
       <WorkImage src="/images/links/bpc.png" alt="BPH-logo" />
 
@@ -65,6 +65,10 @@ const Work = () => (
         <Center>Overview</Center>
       </Heading>
 
+      Founder and lead organizer of the Brown Puzzle Club, which is gearing up to 
+      host a yearly 'Brown Puzzle Hunt' competition for the school, showcasing
+      a suite of club-made puzzles. I am also the tech lead for the two website 
+      components; the landing page for club activities, as well as the competition page.
       <UnorderedList my={4}>
         <ListItem>
           <b>Landing: </b>hosts the general club information and LISTSERV signup for Brown Puzzle Club

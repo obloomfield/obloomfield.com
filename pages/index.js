@@ -24,7 +24,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear, BioYearItal } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
+import { GridItem, WorkGridItem } from '../components/grid-item'
 import {
   IoLogoTwitter,
   IoLogoInstagram,
@@ -68,7 +68,7 @@ const Home = () => (
             </Link>
           </p>
           </Center>
-          <Center>~~~</Center>
+          <Center></Center>
           <Center>
           <BioSection>
             <BioYear>Focus:</BioYear>
@@ -101,7 +101,7 @@ const Home = () => (
           </NextLink>
           <Link href="resume_orion_bloomfield.pdf" target='_blank'>
             <Button rightIcon={<ExternalLinkIcon />} colorScheme="teal">
-              Résumé
+              Resume
             </Button>
           </Link>
         </HStack>
@@ -184,15 +184,15 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
           Current Projects
         </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="/projects/proteinarium"
+          <WorkGridItem
+            id="proteinarium"
             title="Proteinarium"
             thumbnail={thumbProj1}
           >
             Responsive, modern protein-protein interaction analysis webapp. Actively used by numerous PPI researchers.
             <br></br>
             <Meta colorScheme="red">Java</Meta><Meta colorScheme="red">SQL</Meta><Meta colorScheme="purple">TypeScript</Meta><Meta colorScheme="purple">JavaScript</Meta><Meta colorScheme="blue">React</Meta>
-          </GridItem>
+          </WorkGridItem>
           {/* <GridItem
             href="https://obloomfield.github.io/laddtest/"
             title="Ladd Observatory"
@@ -202,33 +202,33 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
             <br></br>
             <Meta>HTML</Meta><Meta>CSS</Meta><Meta>JavaScript</Meta>
           </GridItem> */}
-          <GridItem
-            href="/projects/counterpointer"
+          <WorkGridItem
+            id="counterpointer"
             title="CounterPointer"
             thumbnail={thumbProj3}
           >
             Interactive teaching tool for music theory students generating and resolving species counterpoint. Frontend Lead
             <br></br>
             <Meta colorScheme="red">Java</Meta><Meta colorScheme="purple">TypeScript</Meta><Meta colorScheme="purple">JavaScript</Meta><Meta colorScheme="blue">React</Meta>
-          </GridItem>
-          <GridItem
-            href="/projects/this-site"
+          </WorkGridItem>
+          <WorkGridItem
+            id="this-site"
             title="obloomfield.com"
             thumbnail={thumbProj4}
           >
             This site; kind of meta, holds all my portfolio info in one place!
             <br></br>
             <Meta colorScheme="purple">JavaScript</Meta><Meta colorScheme="blue">React</Meta><Meta colorScheme="blue">Next.js</Meta><Meta colorScheme="blue">Chakra-UI</Meta><Meta colorScheme="blue">Three.js</Meta>
-          </GridItem>
-          <GridItem
-            href="/projects/bph"
+          </WorkGridItem>
+          <WorkGridItem
+            id="bph"
             title="Brown Puzzle Hunt"
             thumbnail={thumbProj5}
           >
             Responsive website for team login, leaderboard, and puzzle hunt content.
             <br></br>
             <Meta colorScheme="red">Python</Meta><Meta colorScheme="red">SQL</Meta><Meta>Javascript</Meta><Meta colorScheme="blue">Django</Meta>
-          </GridItem>
+          </WorkGridItem>
         </SimpleGrid>
       </Section>
 
@@ -468,27 +468,27 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
           Skills
         </Heading>
         <Meta colorScheme={"teal"} fontSize={"md"}>Languages and Technology</Meta> <br></br>
-        <Badge mr={2}>Java</Badge><Badge mr={2}>Javascript</Badge><Badge mr={2}>Python</Badge>
-        <Badge mr={2}>Typescript</Badge><Badge mr={2}>R</Badge><Badge mr={2}>Deep Learning</Badge>
-        <Badge mr={2}>Tensorflow</Badge><Badge mr={2}>Numpy</Badge><Badge mr={2}>Golang</Badge>
-        <Badge mr={2}>Tensorflow</Badge><Badge mr={2}>Numpy</Badge><Badge mr={2}>Golang</Badge>
-        <Badge mr={2}>C++</Badge><Badge mr={2}>SQL</Badge><Badge mr={2}>Docker</Badge>
-        <Badge mr={2}>React</Badge><Badge mr={2}>Next.js</Badge><Badge mr={2}>Django</Badge>
-        <Badge mr={2}>Git</Badge><Badge mr={2}>Decentralized Networks</Badge><Badge mr={2}>DeFi</Badge>
-        <Badge mr={2}>Cryptography</Badge><Badge mr={2}>Cybersecurity</Badge><Badge mr={2}>Unit Testing</Badge>
+        <Badge colorScheme={"white"} mr={2}>Java</Badge><Badge colorScheme={"white"} mr={2}>Javascript</Badge><Badge colorScheme={"white"} mr={2}>Python</Badge>
+        <Badge colorScheme={"white"} mr={2}>Typescript</Badge><Badge colorScheme={"white"} mr={2}>R</Badge><Badge colorScheme={"white"} mr={2}>Deep Learning</Badge>
+        <Badge colorScheme={"white"} mr={2}>Tensorflow</Badge><Badge colorScheme={"white"} mr={2}>Numpy</Badge><Badge colorScheme={"white"} mr={2}>Golang</Badge>
+        <Badge colorScheme={"white"} mr={2}>Tensorflow</Badge><Badge colorScheme={"white"} mr={2}>Numpy</Badge><Badge colorScheme={"white"} mr={2}>Golang</Badge>
+        <Badge colorScheme={"white"} mr={2}>C++</Badge><Badge colorScheme={"white"} mr={2}>SQL</Badge><Badge colorScheme={"white"} mr={2}>Docker</Badge>
+        <Badge colorScheme={"white"} mr={2}>React</Badge><Badge colorScheme={"white"} mr={2}>Next.js</Badge><Badge colorScheme={"white"} mr={2}>Django</Badge>
+        <Badge colorScheme={"white"} mr={2}>Git</Badge><Badge colorScheme={"white"} mr={2}>Decentralized Networks</Badge><Badge colorScheme={"white"} mr={2}>DeFi</Badge>
+        <Badge colorScheme={"white"} mr={2}>Cryptography</Badge><Badge colorScheme={"white"} mr={2}>Cybersecurity</Badge><Badge colorScheme={"white"} mr={2}>Unit Testing</Badge>
         <br></br><br></br>
         <Meta colorScheme={"teal"} fontSize={"md"}>Scientific</Meta> <br></br>
-        <Badge mr={2}>Proteomics</Badge><Badge mr={2}>’Omics data</Badge><Badge mr={2}>PCR</Badge>
-        <Badge mr={2}>iPCR</Badge><Badge mr={2}>IHC</Badge><Badge mr={2}>Spectroscopy</Badge>
-        <Badge mr={2}>Drosophila</Badge><Badge mr={2}>Dissection</Badge><Badge mr={2}>BLAST</Badge>
-        <Badge mr={2}>Gel Electrophoresis</Badge>
+        <Badge colorScheme={"white"} mr={2}>Proteomics</Badge><Badge colorScheme={"white"} mr={2}>’Omics data</Badge><Badge colorScheme={"white"} mr={2}>PCR</Badge>
+        <Badge colorScheme={"white"} mr={2}>iPCR</Badge><Badge colorScheme={"white"} mr={2}>IHC</Badge><Badge colorScheme={"white"} mr={2}>Spectroscopy</Badge>
+        <Badge colorScheme={"white"} mr={2}>Drosophila</Badge><Badge colorScheme={"white"} mr={2}>Dissection</Badge><Badge colorScheme={"white"} mr={2}>BLAST</Badge>
+        <Badge colorScheme={"white"} mr={2}>Gel Electrophoresis</Badge>
         <br></br><br></br>
         <Meta colorScheme={"teal"} fontSize={"md"}>Design</Meta> <br></br>
-        <Badge mr={2}>Photoshop</Badge><Badge mr={2}>Canva</Badge><Badge mr={2}>Figma</Badge>
-        <Badge mr={2}>LaTeX</Badge><Badge mr={2}>Adobe Premiere</Badge>
+        <Badge colorScheme={"white"} mr={2}>Photoshop</Badge><Badge colorScheme={"white"} mr={2}>Canva</Badge><Badge colorScheme={"white"} mr={2}>Figma</Badge>
+        <Badge colorScheme={"white"} mr={2}>LaTeX</Badge><Badge colorScheme={"white"} mr={2}>Adobe Premiere</Badge>
         <br></br><br></br>
         <Meta colorScheme={"teal"} fontSize={"md"}>Miscellaneous</Meta> <br></br>
-        <Badge mr={2}>Puzzle Competitons</Badge><Badge mr={2}>Teaching and Tutoring</Badge><Badge mr={2}>Choral Signing</Badge>
+        <Badge colorScheme={"white"} mr={2}>Puzzle Competitons</Badge><Badge colorScheme={"white"} mr={2}>Teaching and Tutoring</Badge><Badge colorScheme={"white"} mr={2}>Choral Signing</Badge>
       </Section>
 
       {/* <Section delay={0.3}>

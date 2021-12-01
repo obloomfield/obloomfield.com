@@ -26,6 +26,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
       <Link
         p={2}
         bg={active ? 'grassTeal' : undefined}
+        borderRadius={10}
         color={active ? '#202023' : inactiveColor}
         _target={_target}
         {...props}
@@ -112,7 +113,7 @@ const Navbar = props => {
                 <NextLink href="/puzzles" passHref>
                   <MenuItem as={Link}>Puzzles</MenuItem>
                 </NextLink>
-                <NextLink href="https://github.com/obloomfield" passHref>
+                <NextLink href="https://github.com/obloomfield" _target="_blank" passHref>
                   <MenuItem as={Link}>Github Feed</MenuItem>
                 </NextLink>
                 {/* <MenuItem
