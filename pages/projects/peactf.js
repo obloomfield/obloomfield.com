@@ -24,7 +24,7 @@ const Work = () => (
 
       <List ml={4} my={4}>
         <ListItem>
-        <Meta colorScheme="purple">C++</Meta><Meta colorScheme="purple">SQL</Meta><Meta colorScheme="purple">Javascript</Meta><Meta colorScheme="purple">React</Meta>
+        <Meta colorScheme="purple">C</Meta><Meta colorScheme="purple">MongoDB</Meta><Meta colorScheme="purple">Python</Meta><Meta colorScheme="purple">Flask</Meta><Meta colorScheme="purple">React</Meta>
         <br></br>
         </ListItem>
         <ListItem>
@@ -72,8 +72,13 @@ const Work = () => (
         <ListItem>
         Led problem-writing team.
         </ListItem>
+        <br></br>
+        <WorkImage src="/images/links/peactf-architecture.png" alt="peactf-architecture" />
+        <ListItem>
+        Architecture inspiration credit to <Link href="https://github.com/picoCTF/picoCTF">picoCTF</Link></ListItem>
       </UnorderedList>
 
+      
       
 
       

@@ -123,7 +123,7 @@ const Projects = () => (
             Founded capture-the-flag style web competition for aspiring cybersecurity students. Over 2,000 unique
             high school participants across the globe. Designed the website. Led problem-writing team.
             <br></br>
-            <Meta colorScheme="red">C++</Meta><Meta colorScheme="red">SQL</Meta><Meta colorScheme="purple">JavaScript</Meta><Meta colorScheme="blue">React</Meta>
+            <Meta colorScheme="red">C</Meta><Meta colorScheme="red">MongoDB</Meta><Meta colorScheme="red">Python</Meta><Meta colorScheme="red">Flask</Meta><Meta colorScheme="purple">Javascript</Meta><Meta colorScheme="blue">React</Meta>
           </WorkGridItem>
         </Section>
         <Section delay={0.5}>

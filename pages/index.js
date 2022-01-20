@@ -59,12 +59,12 @@ const Home = () => (
             </Heading>
           </Center>
           <Center>
-            <p>Student Researcher, Software Engineer</p>
+            <p>Software Engineer, Student Researcher</p>
           </Center>
           <Center>
-            <p>CS + APMA-Bio{' '}
+            <p>Computer Science{' '}
             <Link href="https://www.brown.edu/" target="_blank" >
-               @Brown U.
+               @Brown University
             </Link>
           </p>
           </Center>
@@ -167,7 +167,7 @@ const Home = () => (
         </BioSection>
         <BioSection fontSize={"sm"}>
           <BioYear></BioYear>
-          Bachelor of Science - Applied Math / Biology
+          Concurrent Master of Science - Computer Science
 
         </BioSection>
         <UnorderedList ml="30px">
@@ -331,6 +331,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
           <UnorderedList ml="30px"fontSize={"sm"}>
               <ListItem >Built lesson plans and taught 6 weeks of virtual coursework on <i>Cryptography, Game Theory</i> to students aged 13-15.</ListItem>
               <ListItem >Provided free summer classes for over 100 students from underprivileged neighborhoods of NYC during the pandemic.</ListItem>
+              <ListItem>One of 13 semifinalists in NYU's <Link href="https://nyusternberkleycenter.com/accelerate-your-growth-2/entrepreneurs-challenge/" target="_blank">2021-22 Entrepreneurs Challenge</Link> cohort. Finals round results TBD.</ListItem>
               {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
         </UnorderedList>
         </Box>
@@ -381,10 +382,10 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
           </Text></Center>
           <UnorderedList ml="30px"fontSize={"sm"}>
               <ListItem >Organize meetings, lead discussions with ~15 regular members on self-made or curated online word and logic puzzles. <br></br><Text fontSize={'xs'}>(More information on <Link href="/puzzles">Puzzles</Link> page!)</Text></ListItem>
-              <ListItem >Plan additional sessions for competing in online "Puzzle Hunt."</ListItem>
+              <ListItem >Plan additional sessions for competing in online "Puzzle Hunts."</ListItem>
               <ListItem >Lead meetings and collaboration of executive team.</ListItem>
               <ListItem >Coordinate team writing puzzles for upcoming "Brown Puzzle Hunt."</ListItem>
-              <ListItem >Developing the <Link href="http://brownpuzzleclub.com/" targe="_blank">front-facing website</Link> and <Link href="http://obloomfield.pythonanywhere.com/" target="_blank">competition website</Link>. Both are WIP</ListItem>
+              <ListItem >Developing the <Link href="http://brownpuzzleclub.com/" target="_blank">front-facing website</Link> and <Link href="http://obloomfield.pythonanywhere.com/" target="_blank">competition website</Link>. Both are WIP</ListItem>
               {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
         </UnorderedList>
         </Box>
@@ -427,17 +428,17 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
               <Link href='http://thehigherkeys.com/' target="_blank">The Higher Keys</Link>
           </Text></Center>
           <Center><Text fontSize={"md"}>
-              <i>Brown U. A Capella | February 2021 - Present</i>
+              <i>Brown U. A Capella | August 2021 - Present</i>
           </Text></Center>
           <UnorderedList ml="30px"fontSize={"sm"}>
-              <ListItem >Coordinate local gigs with student activites, other groups, and campus safety, as well as touring gigs with the venues associated.</ListItem>
+              <ListItem >Coordinate local gigs with student activities, other groups, and campus safety, as well as touring gigs with the venues associated.</ListItem>
               <ListItem >Handle funding and reimbursement of group activities.</ListItem>
-              <ListItem >With the group,Sing bass and arrange music tour and record albums.</ListItem>
+              <ListItem >Sing bass, arranging music for tours and recording albums.</ListItem>
               <ListItem >Maintain the <Link href="http://thehigherkeys.com/" target="_blank">website</Link>.</ListItem>
               {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
         </UnorderedList>
         </Box>
-        <Box
+        {/* <Box
         borderRadius="lg"
         mb={6}
         p={3}
@@ -457,10 +458,9 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
           <UnorderedList ml="30px"fontSize={"sm"}>
               <ListItem >Coordinate the setup and takedown of each concert, as well as equipment moving for each dress rehearsal.</ListItem>
               <ListItem >Sing barritone in the chorus and tour yearly.</ListItem>
-              {/* <ListItem >Maintain the <Link href="http://thehigherkeys.com/" target="_blank">website</Link>.</ListItem> */}
-              {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
+              
         </UnorderedList>
-        </Box>
+        </Box> */}
       </Section>
 
       <Section delay={0.3}>

@@ -75,6 +75,7 @@ const TopPuzzle = () => {
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
       controls.target = target
+      controls.enableZoom = false
       setControls(controls)
 
       loadGLTFModel(scene, '/puzzle2.glb', {
