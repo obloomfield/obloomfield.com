@@ -18,7 +18,7 @@ const Work = () => (
   <Layout title="Proteinariumweb">
     <Container>
       <Title>
-        Proteinarium <Badge>Aug. 2021 - Present</Badge>
+        Proteinarium <Badge>Aug. 2021 - May 2022</Badge>
       </Title>
       <WorkImage src="/images/links/prot2.png" alt="proteinarium" />
 

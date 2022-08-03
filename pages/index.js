@@ -36,12 +36,14 @@ import {
   IoBulb,
   IoLogoFacebook,
   IoLogoLinkedin,
+  IoLogoMicrosoft,
+  IoFlask,
 } from 'react-icons/io5'
 import {GiFly} from 'react-icons/gi'
 import {FaChalkboardTeacher, FaPuzzlePiece, FaDoorOpen} from 'react-icons/fa'
 import {MdLibraryMusic, MdQueueMusic} from 'react-icons/md'
-import thumbProj1 from '../public/images/links/prot2.png'
-import thumbProj2 from '../public/images/links/ladd2.png'
+import thumbProj1 from '../public/images/links/pepbird.png'
+import thumbProj2 from '../public/images/links/prot2.png'
 import thumbProj3 from '../public/images/links/counterpointer3.png'
 import thumbProj4 from '../public/images/links/meta2.png'
 import thumbProj5 from '../public/images/links/bpc.png'
@@ -73,7 +75,7 @@ const Home = () => (
           <BioSection>
             <BioYear>Focus:</BioYear>
             
-            Computational Biology, Deep Learning, Full Stack
+            Computational Biology, Full Stack, Backend
           </BioSection>
           </Center>
         </Box>
@@ -169,8 +171,8 @@ const Home = () => (
 
         </BioSection>
         <UnorderedList ml="30px">
-            <ListItem fontSize={"sm"}><i><b>Relevant Coursework:</b></i> <br></br>Accelerated Intro to CS, Computational Molecular Biology, Deep Learning, Software
-Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Statistical Inference</ListItem>
+            <ListItem fontSize={"sm"}><i><b>Relevant Coursework:</b></i> <br></br>Accelerated Intro to CS, Deep Learning, Software Engineering, Computational Molecular Bio.,
+Accelerating Chemical Discovery, Recent Applications of Probability and Statistics, Honors Linear Algebra</ListItem>
           </UnorderedList>
           
         </Box>
@@ -183,29 +185,30 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
         </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <WorkGridItem
-            id="proteinarium"
-            title="Proteinarium"
+            id="pepbird"
+            title="pep-BIRD"
             thumbnail={thumbProj1}
           >
-            Responsive, modern protein-protein interaction analysis webapp. Actively used by numerous PPI researchers.
+            Interactive data viewer for a curated set of protein-peptide interactions.
+            <br></br>
+            <Meta colorScheme="red">Node.js</Meta><Meta colorScheme="red">Express.js</Meta><Meta colorScheme="purple">JavaScript</Meta><Meta colorScheme="blue">React</Meta>
+          </WorkGridItem>
+          <WorkGridItem
+            id="proteinarium"
+            title="Proteinarium"
+            thumbnail={thumbProj2}
+          >
+            Responsive, modern protein-protein interaction analysis webapp.
             <br></br>
             <Meta colorScheme="red">Java</Meta><Meta colorScheme="red">SQL</Meta><Meta colorScheme="purple">TypeScript</Meta><Meta colorScheme="purple">JavaScript</Meta><Meta colorScheme="blue">React</Meta>
           </WorkGridItem>
-          {/* <GridItem
-            href="https://obloomfield.github.io/laddtest/"
-            title="Ladd Observatory"
-            thumbnail={thumbProj2}
-          >
-            Updated website for the Ladd Observatory @ Brown. Holds historical imaging and booking.
-            <br></br>
-            <Meta>HTML</Meta><Meta>CSS</Meta><Meta>JavaScript</Meta>
-          </GridItem> */}
+          
           <WorkGridItem
             id="counterpointer"
             title="CounterPointer"
             thumbnail={thumbProj3}
           >
-            Interactive teaching tool for music theory students generating and resolving species counterpoint. Frontend Lead
+            Interactive teaching tool for music theory students
             <br></br>
             <Meta colorScheme="red">Java</Meta><Meta colorScheme="purple">TypeScript</Meta><Meta colorScheme="purple">JavaScript</Meta><Meta colorScheme="blue">React</Meta>
           </WorkGridItem>
@@ -218,15 +221,6 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
             <br></br>
             <Meta colorScheme="purple">JavaScript</Meta><Meta colorScheme="blue">React</Meta><Meta colorScheme="blue">Next.js</Meta><Meta colorScheme="blue">Chakra-UI</Meta><Meta colorScheme="blue">Three.js</Meta>
           </WorkGridItem>
-          <WorkGridItem
-            id="bph"
-            title="Brown Puzzle Hunt"
-            thumbnail={thumbProj5}
-          >
-            Responsive website for team login, leaderboard, and puzzle hunt content.
-            <br></br>
-            <Meta colorScheme="red">Python</Meta><Meta colorScheme="red">SQL</Meta><Meta>Javascript</Meta><Meta colorScheme="blue">Django</Meta>
-          </WorkGridItem>
         </SimpleGrid>
       </Section>
 
@@ -234,6 +228,50 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
         <Heading as="h3" variant="section-title">
           Experience
         </Heading>
+        <Box
+        borderRadius="lg"
+        mb={6}
+        p={3}
+        textAlign="left"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        >
+          <Center><Icon as={IoLogoMicrosoft} w={8} h={8}/></Center>
+          <Center><Text fontSize={"lg"}>
+              <b>Software Engineering Intern</b>
+          </Text></Center>
+          <Center><Text fontSize={"lg"}>
+              <Link href='https://azure.microsoft.com/en-us/' target="_blank">Microsoft</Link>
+          </Text></Center>
+          <Center><Text fontSize={"md"}>
+              <i>Azure Data - Usage Billing | June 2022 - August 2022</i>
+          </Text></Center>
+          <UnorderedList ml="30px"fontSize={"sm"}>
+          <ListItem>Created a vscode extension utilizing language modeling to streamline on-boarding new customers to the billing service.</ListItem>
+–         <ListItem>Implemented the Language Server Protocol to allow for code completion, errors, tooltips, etc. to be handled in the editor.</ListItem>
+        </UnorderedList>
+        </Box>
+        <Box
+        borderRadius="lg"
+        mb={6}
+        p={3}
+        textAlign="left"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        >
+          <Center><Icon as={IoFlask} w={8} h={8}/></Center>
+          <Center><Text fontSize={"lg"}>
+              <b>Research Assistant</b>
+          </Text></Center>
+          <Center><Text fontSize={"lg"}>
+              <Link href='https://sites.brown.edu/gmilab/' target="_blank">Rubenstein Theoretical Chemistry Group</Link>
+          </Text></Center>
+          <Center><Text fontSize={"md"}>
+              <i>Brown U. Dept. of Chemistry | May 2022 - Present</i>
+          </Text></Center>
+          <UnorderedList ml="30px"fontSize={"sm"}>
+          <ListItem>Building a <Link href="https://pep-prot.herokuapp.com/" target="_blank">webapp</Link> to host and support queries to a curated dataset of protein-peptide interaction pairs</ListItem>
+–         <ListItem>Implementing interactive viewers for 3D structure, sequence, and markov model dynamics data.</ListItem>
+        </UnorderedList>
+        </Box>
         <Box
         borderRadius="lg"
         mb={6}
@@ -252,9 +290,9 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
               <i>Care New England | August 2021 - Present</i>
           </Text></Center>
           <UnorderedList ml="30px"fontSize={"sm"}>
-              <ListItem >Actively innovating on a protein-protein interaction analytics framework that is already used by hundreds of researchers.</ListItem>
-              <ListItem >Implemented server-side analysis optimizations which save research scientists in the PPI field hours of computation.</ListItem>
-              <ListItem >Building an <Link href="https://proteinarium.brown.edu" target="_blank">interactive web application</Link> that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>  
+          <ListItem>Built an <Link href="https://proteinarium.brown.edu" target="_blank">interactive web application</Link> that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>
+–         <ListItem>Implemented batch server-side analysis optimizations which save research scientists in the PPI field hours of computation.</ListItem>
+–         <ListItem>Innovated on the backend analytics framework, used by hundreds of researchers.</ListItem>
         </UnorderedList>
         </Box>
         <Box
@@ -276,7 +314,7 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
           </Text></Center>
           <UnorderedList ml="30px"fontSize={"sm"}>
               <ListItem >Lead group observatory viewing sessions, operating multiple sets of telescope equipment.</ListItem>
-              <ListItem >Designing new website for the observatory - <i>website coming soon!</i></ListItem>
+              <ListItem >Designing layout for monthly observatory magazine.</ListItem>
               {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
         </UnorderedList>
         </Box>
@@ -316,30 +354,6 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
         textAlign="left"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
-          <Center><Icon as={IoBulb} w={8} h={8}/></Center>
-          <Center><Text fontSize={"lg"}>
-              <b>Lead Organizer, Instructor</b>
-          </Text></Center>
-          <Center><Text fontSize={"lg"}>
-              <Link href='https://www.pensos.org' target="_blank">Pensos Summer Academy</Link>
-          </Text></Center>
-          <Center><Text fontSize={"md"}>
-              <i>Startup - Nonprofit | June 2021 - Present</i>
-          </Text></Center>
-          <UnorderedList ml="30px"fontSize={"sm"}>
-              <ListItem >Built lesson plans and taught 6 weeks of virtual coursework on <i>Cryptography, Game Theory</i> to students aged 13-15.</ListItem>
-              <ListItem >Provided free summer classes for over 100 students from underprivileged neighborhoods of NYC during the pandemic.</ListItem>
-              <ListItem>One of 13 semifinalists in NYU's <Link href="https://nyusternberkleycenter.com/accelerate-your-growth-2/entrepreneurs-challenge/" target="_blank">2021-22 Entrepreneurs Challenge</Link> cohort. Finals round results TBD.</ListItem>
-              {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
-        </UnorderedList>
-        </Box>
-        <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="left"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        >
           <Center><Icon as={FaChalkboardTeacher} w={8} h={8}/></Center>
           <Center><Text fontSize={"lg"}>
               <b>Online Tutor</b>
@@ -355,6 +369,31 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
               {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
         </UnorderedList>
         </Box>
+        <Box
+        borderRadius="lg"
+        mb={6}
+        p={3}
+        textAlign="left"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        >
+          <Center><Icon as={IoBulb} w={8} h={8}/></Center>
+          <Center><Text fontSize={"lg"}>
+              <b>Technology Lead, Instructor</b>
+          </Text></Center>
+          <Center><Text fontSize={"lg"}>
+              <Link href='https://www.pensos.org' target="_blank">Pensos Summer Academy</Link>
+          </Text></Center>
+          <Center><Text fontSize={"md"}>
+              <i>Startup - Nonprofit | June 2021 - September 2021</i>
+          </Text></Center>
+          <UnorderedList ml="30px"fontSize={"sm"}>
+              <ListItem >Built lesson plans and taught 6 weeks of virtual coursework on <i>Cryptography, Game Theory</i> to students aged 13-15.</ListItem>
+              <ListItem >Provided free summer classes for over 100 students from NYC during the pandemic.</ListItem>
+              <ListItem>One of 13 semifinalists in NYU's <Link href="https://nyusternberkleycenter.com/accelerate-your-growth-2/entrepreneurs-challenge/" target="_blank">2021-22 Entrepreneurs Challenge</Link> cohort..</ListItem>
+              {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
+        </UnorderedList>
+        </Box>
+        
       </Section>
 
       <Section delay={0.3}>
@@ -465,25 +504,26 @@ Engineering, Organic Chemistry, Blockchains and Cryptocurrencies, Advanced Stati
         <Heading as="h3" variant="section-title">
           Skills
         </Heading>
+
         <Meta colorScheme={"teal"} fontSize={"md"}>Languages and Technology</Meta> <br></br>
-        <Badge colorScheme={"white"} mr={2}>Java</Badge><Badge colorScheme={"white"} mr={2}>Javascript</Badge><Badge colorScheme={"white"} mr={2}>Python</Badge>
-        <Badge colorScheme={"white"} mr={2}>Typescript</Badge><Badge colorScheme={"white"} mr={2}>R</Badge><Badge colorScheme={"white"} mr={2}>Deep Learning</Badge>
-        <Badge colorScheme={"white"} mr={2}>Tensorflow</Badge><Badge colorScheme={"white"} mr={2}>Numpy</Badge><Badge colorScheme={"white"} mr={2}>Golang</Badge>
-        <Badge colorScheme={"white"} mr={2}>Tensorflow</Badge><Badge colorScheme={"white"} mr={2}>Numpy</Badge><Badge colorScheme={"white"} mr={2}>Golang</Badge>
-        <Badge colorScheme={"white"} mr={2}>C++</Badge><Badge colorScheme={"white"} mr={2}>SQL</Badge><Badge colorScheme={"white"} mr={2}>Docker</Badge>
-        <Badge colorScheme={"white"} mr={2}>React</Badge><Badge colorScheme={"white"} mr={2}>Next.js</Badge><Badge colorScheme={"white"} mr={2}>Django</Badge>
-        <Badge colorScheme={"white"} mr={2}>Git</Badge><Badge colorScheme={"white"} mr={2}>Decentralized Networks</Badge><Badge colorScheme={"white"} mr={2}>DeFi</Badge>
-        <Badge colorScheme={"white"} mr={2}>Cryptography</Badge><Badge colorScheme={"white"} mr={2}>Cybersecurity</Badge><Badge colorScheme={"white"} mr={2}>Unit Testing</Badge>
+        <Badge colorScheme={"white"} mr={2}>Java</Badge><Badge colorScheme={"white"} mr={2}>C#</Badge><Badge colorScheme={"white"} mr={2}>Javascript</Badge>
+        <Badge colorScheme={"white"} mr={2}>Typescript</Badge><Badge colorScheme={"white"} mr={2}>Python</Badge><Badge colorScheme={"white"} mr={2}>React</Badge>
+        <Badge colorScheme={"white"} mr={2}>Node.js</Badge><Badge colorScheme={"white"} mr={2}>Golang</Badge><Badge colorScheme={"white"} mr={2}>C++</Badge>
+        <Badge colorScheme={"white"} mr={2}>Machine Learning</Badge><Badge colorScheme={"white"} mr={2}>Tensorflow</Badge><Badge colorScheme={"white"} mr={2}>Numpy</Badge>
+        <Badge colorScheme={"white"} mr={2}>SQL</Badge><Badge colorScheme={"white"} mr={2}>Docker</Badge><Badge colorScheme={"white"} mr={2}>Git</Badge>
+        <Badge colorScheme={"white"} mr={2}>DeFi</Badge><Badge colorScheme={"white"} mr={2}>Cryptography</Badge>
+        <Badge colorScheme={"white"} mr={2}>Cybersecurity</Badge><Badge colorScheme={"white"} mr={2}>Unit Testing</Badge>
         <br></br><br></br>
         <Meta colorScheme={"teal"} fontSize={"md"}>Scientific</Meta> <br></br>
-        <Badge colorScheme={"white"} mr={2}>Proteomics</Badge><Badge colorScheme={"white"} mr={2}>’Omics data</Badge><Badge colorScheme={"white"} mr={2}>PCR</Badge>
+        <Badge colorScheme={"white"} mr={2}>Proteomics</Badge><Badge colorScheme={"white"} mr={2}>PCR</Badge>
         <Badge colorScheme={"white"} mr={2}>iPCR</Badge><Badge colorScheme={"white"} mr={2}>IHC</Badge><Badge colorScheme={"white"} mr={2}>Spectroscopy</Badge>
         <Badge colorScheme={"white"} mr={2}>Drosophila</Badge><Badge colorScheme={"white"} mr={2}>Dissection</Badge><Badge colorScheme={"white"} mr={2}>BLAST</Badge>
         <Badge colorScheme={"white"} mr={2}>Gel Electrophoresis</Badge>
         <br></br><br></br>
         <Meta colorScheme={"teal"} fontSize={"md"}>Design</Meta> <br></br>
-        <Badge colorScheme={"white"} mr={2}>Photoshop</Badge><Badge colorScheme={"white"} mr={2}>Canva</Badge><Badge colorScheme={"white"} mr={2}>Figma</Badge>
-        <Badge colorScheme={"white"} mr={2}>LaTeX</Badge><Badge colorScheme={"white"} mr={2}>Adobe Premiere</Badge>
+        <Badge colorScheme={"white"} mr={2}>Canva</Badge><Badge colorScheme={"white"} mr={2}>Figma</Badge>
+        <Badge colorScheme={"white"} mr={2}>LaTeX</Badge><Badge colorScheme={"white"} mr={2}>Adobe Premiere</Badge><Badge colorScheme={"white"} mr={2}>Adobe Photoshop</Badge>
+        <Badge colorScheme={"white"} mr={2}>Adobe InDesign</Badge>
         <br></br><br></br>
         <Meta colorScheme={"teal"} fontSize={"md"}>Miscellaneous</Meta> <br></br>
         <Badge colorScheme={"white"} mr={2}>Puzzle Competitons</Badge><Badge colorScheme={"white"} mr={2}>Teaching and Tutoring</Badge><Badge colorScheme={"white"} mr={2}>Choral Signing</Badge>
