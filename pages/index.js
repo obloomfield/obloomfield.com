@@ -113,10 +113,8 @@ const Home = () => (
         </Heading>
         <Paragraph>
           {/* WORK ON THIS INTRO */}
-          Hi there! I&apos;m Orion, a second-year student at Brown University. Through research opportunities
-          and personal work, I am experienced building full-stack platforms and visualizations for 
-          computational biology, as well as working on general software engineering webapps for 
-          music theory, crypto, and puzzle competitons.
+          Hi there! I&apos;m Orion, a second-year student at Brown University. Through internships, research opportunities,
+          and personal work, I am experienced building full-stack platforms, as well as working on general backend services.
           <br></br><br></br>
           I am excited for a career in biotechnology and software engineering, where I can utilize my
           research and software skills to implement platforms and visualizations that aid further research or clinical work.
