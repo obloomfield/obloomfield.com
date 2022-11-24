@@ -722,13 +722,13 @@ const Home = () => (
             <ListItem>
               Sing bass, arranging music for tours and recording albums.
             </ListItem>
-            <ListItem>
+            {/* <ListItem>
               Maintain the{' '}
               <Link href="http://thehigherkeys.com/" target="_blank">
                 website
               </Link>
               .
-            </ListItem>
+            </ListItem> */}
             {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
           </UnorderedList>
         </Box>
