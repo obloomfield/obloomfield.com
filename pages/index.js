@@ -583,14 +583,12 @@ const Home = () => (
           </Center>
           <Center>
             <Text fontSize={'lg'}>
-              <b>Founder, Lead Organizer and Writer</b>
+              <b>Co-Founder, Lead Organizer</b>
             </Text>
           </Center>
           <Center>
             <Text fontSize={'lg'}>
-              <Link href="http://brownpuzzleclub.com/" target="_blank">
-                Brown Puzzle Club
-              </Link>
+              <Link href="/puzzles">Brown Puzzle Club</Link>
             </Text>
           </Center>
           <Center>
@@ -600,7 +598,7 @@ const Home = () => (
           </Center>
           <UnorderedList ml="30px" fontSize={'sm'}>
             <ListItem>
-              Organize meetings, lead discussions with ~15 regular members on
+              Organize meetings, lead discussions with ~20 regular members on
               self-made or curated online word and logic puzzles. <br></br>
               <Text fontSize={'xs'}>
                 (More information on <Link href="/puzzles">Puzzles</Link> page!)
@@ -615,7 +613,7 @@ const Home = () => (
             <ListItem>
               Coordinate team writing puzzles for upcoming "Brown Puzzle Hunt."
             </ListItem>
-            <ListItem>
+            {/* <ListItem>
               Developing the{' '}
               <Link href="http://brownpuzzleclub.com/" target="_blank">
                 front-facing website
@@ -628,7 +626,7 @@ const Home = () => (
                 competition website
               </Link>
               . Both are WIP
-            </ListItem>
+            </ListItem> */}
             {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
           </UnorderedList>
         </Box>
