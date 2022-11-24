@@ -178,10 +178,10 @@ const Home = () => (
               <i>
                 <b>Relevant Coursework:</b>
               </i>{' '}
-              <br></br>Accelerated Intro to CS, Deep Learning, Software
-              Engineering, Computational Molecular Bio., Accelerating Chemical
-              Discovery, Recent Applications of Probability and Statistics,
-              Honors Linear Algebra
+              <br></br>Accelerated Intro to CS, Deep Learning, Graduate Computer
+              Graphics, Software Engineering, Computational Molecular Bio.,
+              Recent Applications of Probability and Statistics, Honors Linear
+              Algebra
             </ListItem>
           </UnorderedList>
         </Box>
