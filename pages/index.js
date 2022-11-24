@@ -112,7 +112,7 @@ const Home = () => (
         </Heading>
         <Paragraph>
           {/* WORK ON THIS INTRO */}
-          Hi there! I&apos;m Orion, a second-year student at Brown University.
+          Hi there! I&apos;m Orion, a third-year student at Brown University.
           Through internships, research opportunities, and personal work, I am
           experienced building full-stack platforms, as well as working on
           general backend services.
@@ -192,7 +192,7 @@ const Home = () => (
           Current Projects
         </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <WorkGridItem id="pepbird" title="pep-BIRD" thumbnail={thumbProj1}>
+          <WorkGridItem id="pepbird" title="pep-BARD" thumbnail={thumbProj1}>
             Interactive data viewer for a curated set of protein-peptide
             interactions.
             <br></br>
