@@ -20,7 +20,12 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import { FaChalkboardTeacher, FaDoorOpen, FaPuzzlePiece } from 'react-icons/fa'
+import {
+  FaChalkboardTeacher,
+  FaCogs,
+  FaDoorOpen,
+  FaPuzzlePiece
+} from 'react-icons/fa'
 import { GiFly } from 'react-icons/gi'
 import {
   IoBulb,
@@ -45,6 +50,7 @@ import Section from '../components/section'
 import { Meta } from '../components/work'
 import thumbProj5 from '../public/images/links/bpc.png'
 import thumbProj3 from '../public/images/links/counterpointer3.png'
+import thumbProj0 from '../public/images/links/desktop-world.png'
 import thumbProj4 from '../public/images/links/meta2.png'
 import thumbProj1 from '../public/images/links/pepbird.png'
 import thumbProj2 from '../public/images/links/prot2.png'
@@ -117,12 +123,13 @@ const Home = () => (
           experienced building full-stack platforms, as well as working on
           general backend services.
           <br></br>
-          <br></br>I am excited for a career in biotechnology and software
-          engineering, where I can utilize my research and software skills to
+          <br></br>
+          {/* <br></br>I am excited for a career in software
+          engineering, where I can utilize my skills to
           implement platforms and visualizations that aid further research or
           clinical work.
           <br></br>
-          <br></br>
+          <br></br> */}
           In my free time, I sing in choir and acapella, tutor high schoolers in
           math and science, and write puzzles for competitions and escape rooms.
           <br></br>
@@ -192,6 +199,18 @@ const Home = () => (
           Current Projects
         </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <WorkGridItem
+            id="desktop-world"
+            title="Desktop World"
+            thumbnail={thumbProj0}
+          >
+            Procedural landscape in a bowl - using custom shaders, boids,
+            selective bloom.
+            <br></br>
+            <Meta colorScheme="red">Node.js</Meta>
+            <Meta colorScheme="purple">JavaScript</Meta>
+            <Meta colorScheme="blue">Three.js</Meta>
+          </WorkGridItem>
           <WorkGridItem id="pepbird" title="pep-BARD" thumbnail={thumbProj1}>
             Interactive data viewer for a curated set of protein-peptide
             interactions.
@@ -227,7 +246,7 @@ const Home = () => (
             <Meta colorScheme="purple">JavaScript</Meta>
             <Meta colorScheme="blue">React</Meta>
           </WorkGridItem>
-          <WorkGridItem
+          {/* <WorkGridItem
             id="this-site"
             title="obloomfield.com"
             thumbnail={thumbProj4}
@@ -239,7 +258,7 @@ const Home = () => (
             <Meta colorScheme="blue">Next.js</Meta>
             <Meta colorScheme="blue">Chakra-UI</Meta>
             <Meta colorScheme="blue">Three.js</Meta>
-          </WorkGridItem>
+          </WorkGridItem> */}
         </SimpleGrid>
       </Section>
 
@@ -385,6 +404,12 @@ const Home = () => (
             </ListItem>
           </UnorderedList>
         </Box>
+      </Section>
+
+      <Section delay={0.25}>
+        <Heading as="h3" variant="section-title">
+          Teaching
+        </Heading>
         <Box
           borderRadius="lg"
           mb={6}
@@ -393,35 +418,32 @@ const Home = () => (
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
           <Center>
-            <Icon as={IoTelescope} w={8} h={8} />
+            <Icon as={FaCogs} w={8} h={8} />
           </Center>
           <Center>
             <Text fontSize={'lg'}>
-              <b>Observatory Assistant</b>
+              <b>Teaching Assistant</b>
             </Text>
           </Center>
           <Center>
             <Text fontSize={'lg'}>
-              <Link
-                href="https://www.brown.edu/Departments/Physics/Ladd/"
-                target="_blank"
-              >
-                Ladd Observatory
+              <Link href="https://cs0320.github.io/" target="_blank">
+                CSCI0320 - Introduction to Software Engineering
               </Link>
             </Text>
           </Center>
           <Center>
             <Text fontSize={'md'}>
-              <i>Brown U. Dept. of Physics | August 2021 - Present</i>
+              <i>Brown U. Dept of Computer Science | January 2023 - Present</i>
             </Text>
           </Center>
           <UnorderedList ml="30px" fontSize={'sm'}>
             <ListItem>
-              Lead group observatory viewing sessions for 100+ visitors a night,
-              operating historical telescope equipment.
+              Hold weekly office hours, provide regular mentor check-ups for
+              project group
             </ListItem>
             <ListItem>
-              Designing layout for monthly observatory magazine.
+              Develop and test novel course assignments and features.
             </ListItem>
             {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
           </UnorderedList>
@@ -434,53 +456,42 @@ const Home = () => (
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
           <Center>
-            <Icon as={GiFly} w={8} h={8} />
+            <Icon as={IoBulb} w={8} h={8} />
           </Center>
           <Center>
             <Text fontSize={'lg'}>
-              <b>Summer Research Intern</b>
+              <b>Teaching Assistant</b>
             </Text>
           </Center>
           <Center>
             <Text fontSize={'lg'}>
-              <Link href="https://seungkimlab.stanford.edu/" target="_blank">
-                Dr. Seung Kim's Developmental Biology Lab
+              <Link
+                href="https://www.brown.edu/research/labs/rubenstein/home"
+                target="_blank"
+              >
+                CHEM1560Q - Accelerating Chemical Discovery
               </Link>
             </Text>
           </Center>
           <Center>
             <Text fontSize={'md'}>
-              <i>Stanford U. School of Medicine | July 2019 - Aug. 2019</i>
+              <i>Brown U. Dept of Chemistry | December 2022 - Present</i>
             </Text>
           </Center>
           <UnorderedList ml="30px" fontSize={'sm'}>
             <ListItem>
-              Utilized iPCR protocols to determine the location and orientation
-              of novel p-element insertions in <i>Drosophila</i>
+              Primary developer of new course content - involving autograding
+              support through otter-grader.
             </ListItem>
             <ListItem>
-              Created a{' '}
-              <Link
-                href="https://obloomfield.github.io/sgovi-pSeq/index.html"
-                target="_blank"
-              >
-                site
-              </Link>{' '}
-              to aid in the systematic analysis of PCR reads and expression
-              data.
+              Hold weekly office hours and check-ins with students - supporting
+              the learning process of challenging applications of sklearn,
+              deepChem, tensorflow, for students with no prior coding
+              experience.
             </ListItem>
-            <ListItem>
-              Taught 12 rotating high school biology teachers Drosophila
-              genetics basics and classroom adoption methods.
-            </ListItem>
+            {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
           </UnorderedList>
         </Box>
-      </Section>
-
-      <Section delay={0.25}>
-        <Heading as="h3" variant="section-title">
-          Teaching
-        </Heading>
         <Box
           borderRadius="lg"
           mb={6}
@@ -516,7 +527,7 @@ const Home = () => (
             {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
           </UnorderedList>
         </Box>
-        <Box
+        {/* <Box
           borderRadius="lg"
           mb={6}
           p={3}
@@ -562,9 +573,8 @@ const Home = () => (
               </Link>{' '}
               cohort..
             </ListItem>
-            {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
           </UnorderedList>
-        </Box>
+        </Box> */}
       </Section>
 
       <Section delay={0.3}>
@@ -630,6 +640,55 @@ const Home = () => (
             {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
           </UnorderedList>
         </Box>
+
+        <Box
+          borderRadius="lg"
+          mb={6}
+          p={3}
+          textAlign="left"
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        >
+          <Center>
+            <Icon as={MdLibraryMusic} w={8} h={8} />
+          </Center>
+          <Center>
+            <Text fontSize={'lg'}>
+              <b>Business Manager</b>
+            </Text>
+          </Center>
+          <Center>
+            <Text fontSize={'lg'}>
+              <Link href="http://thehigherkeys.com/" target="_blank">
+                The Higher Keys
+              </Link>
+            </Text>
+          </Center>
+          <Center>
+            <Text fontSize={'md'}>
+              <i>Brown U. A Capella | August 2021 - Present</i>
+            </Text>
+          </Center>
+          <UnorderedList ml="30px" fontSize={'sm'}>
+            <ListItem>
+              Coordinate local gigs with student activities, other groups, and
+              campus safety, as well as touring gigs with the venues associated.
+            </ListItem>
+            <ListItem>
+              Handle funding and reimbursement of group activities.
+            </ListItem>
+            <ListItem>
+              Sing bass, arranging music for tours and recording albums.
+            </ListItem>
+            {/* <ListItem>
+              Maintain the{' '}
+              <Link href="http://thehigherkeys.com/" target="_blank">
+                website
+              </Link>
+              .
+            </ListItem> */}
+            {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
+          </UnorderedList>
+        </Box>
         <Box
           borderRadius="lg"
           mb={6}
@@ -681,54 +740,6 @@ const Home = () => (
               </Link>{' '}
               entrepreneurial spirit award
             </ListItem>
-            {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
-          </UnorderedList>
-        </Box>
-        <Box
-          borderRadius="lg"
-          mb={6}
-          p={3}
-          textAlign="left"
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        >
-          <Center>
-            <Icon as={MdLibraryMusic} w={8} h={8} />
-          </Center>
-          <Center>
-            <Text fontSize={'lg'}>
-              <b>Business Manager</b>
-            </Text>
-          </Center>
-          <Center>
-            <Text fontSize={'lg'}>
-              <Link href="http://thehigherkeys.com/" target="_blank">
-                The Higher Keys
-              </Link>
-            </Text>
-          </Center>
-          <Center>
-            <Text fontSize={'md'}>
-              <i>Brown U. A Capella | August 2021 - Present</i>
-            </Text>
-          </Center>
-          <UnorderedList ml="30px" fontSize={'sm'}>
-            <ListItem>
-              Coordinate local gigs with student activities, other groups, and
-              campus safety, as well as touring gigs with the venues associated.
-            </ListItem>
-            <ListItem>
-              Handle funding and reimbursement of group activities.
-            </ListItem>
-            <ListItem>
-              Sing bass, arranging music for tours and recording albums.
-            </ListItem>
-            {/* <ListItem>
-              Maintain the{' '}
-              <Link href="http://thehigherkeys.com/" target="_blank">
-                website
-              </Link>
-              .
-            </ListItem> */}
             {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
           </UnorderedList>
         </Box>
