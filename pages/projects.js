@@ -39,7 +39,7 @@ const Projects = () => (
           <Meta colorScheme="purple">JavaScript</Meta>
           <Meta colorScheme="blue">Three.js</Meta>
         </WorkGridItem>
-        <WorkGridItem id="pepbird" title="pep-BIRD" thumbnail={projIcon1}>
+        <WorkGridItem id="pepbard" title="pep-BARD" thumbnail={projIcon1}>
           Interactive data viewer for a curated set of protein-peptide
           interactions.
           <br></br>
@@ -110,6 +110,7 @@ const Projects = () => (
             <Meta colorScheme="red">Node.js</Meta>
             <Meta colorScheme="purple">JavaScript</Meta>
             <Meta colorScheme="blue">Three.js</Meta>
+            <Meta colorScheme="blue">GLSL</Meta>
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>

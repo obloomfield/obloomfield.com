@@ -26,6 +26,7 @@ const Work = () => (
           <Meta>Node.js</Meta>
           <Meta>JavaScript</Meta>
           <Meta>Three.js</Meta>
+          <Meta>GLSL</Meta>
           <br></br>
         </ListItem>
         <ListItem>

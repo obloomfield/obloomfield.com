@@ -120,8 +120,8 @@ const Home = () => (
           {/* WORK ON THIS INTRO */}
           Hi there! I&apos;m Orion, a third-year student at Brown University.
           Through internships, research opportunities, and personal work, I am
-          experienced building full-stack platforms, as well as working on
-          general backend services.
+          experienced building full-stack platforms, backend services, and
+          computer graphics applications.
           <br></br>
           <br></br>
           {/* <br></br>I am excited for a career in software
@@ -210,8 +210,9 @@ const Home = () => (
             <Meta colorScheme="red">Node.js</Meta>
             <Meta colorScheme="purple">JavaScript</Meta>
             <Meta colorScheme="blue">Three.js</Meta>
+            <Meta colorScheme="blue">GLSL</Meta>
           </WorkGridItem>
-          <WorkGridItem id="pepbird" title="pep-BARD" thumbnail={thumbProj1}>
+          <WorkGridItem id="pepbard" title="pep-BARD" thumbnail={thumbProj1}>
             Interactive data viewer for a curated set of protein-peptide
             interactions.
             <br></br>
@@ -903,7 +904,7 @@ const Home = () => (
           Teaching and Tutoring
         </Badge>
         <Badge colorScheme={'white'} mr={2}>
-          Choral Signing
+          Choral Singing
         </Badge>
       </Section>
 
@@ -954,7 +955,7 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
+          {/* <ListItem>
             <Link
               href="https://www.facebook.com/orion.bloomfield"
               target="_blank"
@@ -982,7 +983,7 @@ const Home = () => (
                 @orion.bloomfield
               </Button>
             </Link>
-          </ListItem>
+          </ListItem> */}
         </List>
       </Section>
     </Container>
