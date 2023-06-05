@@ -21,6 +21,7 @@ import {
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import {
+  FaAws,
   FaChalkboardTeacher,
   FaCogs,
   FaDoorOpen,
@@ -32,6 +33,7 @@ import {
   IoExtensionPuzzle,
   IoFlask,
   IoGitMergeSharp,
+  IoLogoAmazon,
   IoLogoDiscord,
   IoLogoFacebook,
   IoLogoGithub,
@@ -48,12 +50,13 @@ import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 import { Meta } from '../components/work'
-import thumbProj5 from '../public/images/links/bpc.png'
-import thumbProj3 from '../public/images/links/counterpointer3.png'
-import thumbProj0 from '../public/images/links/desktop-world.png'
-import thumbProj4 from '../public/images/links/meta2.png'
-import thumbProj1 from '../public/images/links/pepbird.png'
-import thumbProj2 from '../public/images/links/prot2.png'
+
+import thumbProj2 from '../public/images/links/acap.png'
+import thumbProj0 from '../public/images/links/bph.png'
+import thumbProj1 from '../public/images/links/desktop-world.png'
+import thumbProj3 from '../public/images/links/prot2.png'
+
+import WorkingOn from './projects/workingon'
 
 const Home = () => (
   <Layout>
@@ -80,7 +83,7 @@ const Home = () => (
           <Center>
             <BioSection>
               <BioYear>Focus:</BioYear>
-              Computational Biology, Full Stack, Backend
+              Computer Graphics, Full Stack, Backend
             </BioSection>
           </Center>
         </Box>
@@ -118,7 +121,7 @@ const Home = () => (
         </Heading>
         <Paragraph>
           {/* WORK ON THIS INTRO */}
-          Hi there! I&apos;m Orion, a third-year student at Brown University.
+          Hi there! I&apos;m Orion, a fourth-year student at Brown University.
           Through internships, research opportunities, and personal work, I am
           experienced building full-stack platforms, backend services, and
           computer graphics applications.
@@ -185,7 +188,7 @@ const Home = () => (
               <i>
                 <b>Relevant Coursework:</b>
               </i>{' '}
-              <br></br>Accelerated Intro to CS, Deep Learning, Graduate Computer
+              <br></br>Deep Learning, Advanced Computer Graphics, Graduate Computer
               Graphics, Software Engineering, Computational Molecular Bio.,
               Recent Applications of Probability and Statistics, Honors Linear
               Algebra
@@ -198,75 +201,46 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Current Projects
         </Heading>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <WorkGridItem
-            id="desktop-world"
-            title="Desktop World"
-            thumbnail={thumbProj0}
-          >
-            Procedural landscape in a bowl - using custom shaders, boids,
-            selective bloom.
-            <br></br>
-            <Meta colorScheme="red">Node.js</Meta>
-            <Meta colorScheme="purple">JavaScript</Meta>
-            <Meta colorScheme="blue">Three.js</Meta>
-            <Meta colorScheme="blue">GLSL</Meta>
-          </WorkGridItem>
-          <WorkGridItem id="pepbard" title="pep-BARD" thumbnail={thumbProj1}>
-            Interactive data viewer for a curated set of protein-peptide
-            interactions.
-            <br></br>
-            <Meta colorScheme="red">Node.js</Meta>
-            <Meta colorScheme="red">Express.js</Meta>
-            <Meta colorScheme="purple">JavaScript</Meta>
-            <Meta colorScheme="blue">React</Meta>
-          </WorkGridItem>
-          <WorkGridItem
-            id="proteinarium"
-            title="Proteinarium"
-            thumbnail={thumbProj2}
-          >
-            Responsive, modern protein-protein interaction analysis webapp.
-            <br></br>
-            <Meta colorScheme="red">Java</Meta>
-            <Meta colorScheme="red">SQL</Meta>
-            <Meta colorScheme="purple">TypeScript</Meta>
-            <Meta colorScheme="purple">JavaScript</Meta>
-            <Meta colorScheme="blue">React</Meta>
-          </WorkGridItem>
-
-          <WorkGridItem
-            id="counterpointer"
-            title="CounterPointer"
-            thumbnail={thumbProj3}
-          >
-            Interactive teaching tool for music theory students
-            <br></br>
-            <Meta colorScheme="red">Java</Meta>
-            <Meta colorScheme="purple">TypeScript</Meta>
-            <Meta colorScheme="purple">JavaScript</Meta>
-            <Meta colorScheme="blue">React</Meta>
-          </WorkGridItem>
-          {/* <WorkGridItem
-            id="this-site"
-            title="obloomfield.com"
-            thumbnail={thumbProj4}
-          >
-            This site; kind of meta, holds all my portfolio info in one place!
-            <br></br>
-            <Meta colorScheme="purple">JavaScript</Meta>
-            <Meta colorScheme="blue">React</Meta>
-            <Meta colorScheme="blue">Next.js</Meta>
-            <Meta colorScheme="blue">Chakra-UI</Meta>
-            <Meta colorScheme="blue">Three.js</Meta>
-          </WorkGridItem> */}
-        </SimpleGrid>
+        <WorkingOn/>
       </Section>
 
       <Section delay={0.25}>
         <Heading as="h3" variant="section-title">
           Experience
         </Heading>
+        <Box
+          borderRadius="lg"
+          mb={6}
+          p={3}
+          textAlign="left"
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        >
+          <Center>
+            <Icon as={FaAws} w={8} h={8} />
+          </Center>
+          <Center>
+            <Text fontSize={'lg'}>
+              <b>Software Development Engineer Intern</b>
+            </Text>
+          </Center>
+          <Center>
+            <Text fontSize={'lg'}>
+              <Link href="https://aws.amazon.com/" target="_blank">
+                Amazon Web Services
+              </Link>
+            </Text>
+          </Center>
+          <Center>
+            <Text fontSize={'md'}>
+              <i>AWS Support - Harbinger EMT | June 2023 - August 2023</i>
+            </Text>
+          </Center>
+          <UnorderedList ml="30px" fontSize={'sm'}>
+            <ListItem>Building new automation features on critical AWS Support dashboards.</ListItem>
+            <ListItem>Working on AWS Serverless CDK in Python to deliver new lambda and SNS features to the service.</ListItem>
+            <ListItem>Developing new feature visibility on a Cloudscape dashboard frontend</ListItem>
+          </UnorderedList>
+        </Box>
         <Box
           borderRadius="lg"
           mb={6}
@@ -381,7 +355,7 @@ const Home = () => (
           </Center>
           <Center>
             <Text fontSize={'md'}>
-              <i>Care New England | August 2021 - Present</i>
+              <i>Care New England | August 2021 - January 2023</i>
             </Text>
           </Center>
           <UnorderedList ml="30px" fontSize={'sm'}>
@@ -435,10 +409,13 @@ const Home = () => (
           </Center>
           <Center>
             <Text fontSize={'md'}>
-              <i>Brown U. Dept of Computer Science | January 2023 - Present</i>
+              <i>Brown U. Dept of Computer Science | January 2023 - May 2023</i>
             </Text>
           </Center>
           <UnorderedList ml="30px" fontSize={'sm'}>
+            <ListItem>
+              Develop and present new gearup content for course assignments.
+            </ListItem>
             <ListItem>
               Hold weekly office hours, provide regular mentor check-ups for
               project group
@@ -476,7 +453,7 @@ const Home = () => (
           </Center>
           <Center>
             <Text fontSize={'md'}>
-              <i>Brown U. Dept of Chemistry | December 2022 - Present</i>
+              <i>Brown U. Dept of Chemistry | December 2022 - May 2023</i>
             </Text>
           </Center>
           <UnorderedList ml="30px" fontSize={'sm'}>
@@ -517,7 +494,7 @@ const Home = () => (
           </Center>
           <Center>
             <Text fontSize={'md'}>
-              <i>Startup - For-profit | July 2021 - Present</i>
+              <i>Startup - For-profit | July 2021 - November 2022</i>
             </Text>
           </Center>
           <UnorderedList ml="30px" fontSize={'sm'}>
@@ -594,12 +571,12 @@ const Home = () => (
           </Center>
           <Center>
             <Text fontSize={'lg'}>
-              <b>Co-Founder, Lead Organizer</b>
+              <b>Co-Founder, Lead Organizer, Tech Lead</b>
             </Text>
           </Center>
           <Center>
             <Text fontSize={'lg'}>
-              <Link href="/puzzles">Brown Puzzle Club</Link>
+              <Link href="/projects/bph">Brown Puzzle Club</Link>
             </Text>
           </Center>
           <Center>
@@ -609,11 +586,17 @@ const Home = () => (
           </Center>
           <UnorderedList ml="30px" fontSize={'sm'}>
             <ListItem>
-              Organize meetings, lead discussions with ~20 regular members on
+              Plan weekly meetings for ~20 regular members on
               self-made or curated online word and logic puzzles. <br></br>
               <Text fontSize={'xs'}>
                 (More information on <Link href="/puzzles">Puzzles</Link> page!)
               </Text>
+            </ListItem>
+            <ListItem>
+              Handle overarching organization, tech for <Link href={`/projects/bph`}>Brown Puzzle Hunt</Link>, attracting 650+ unique participants across 123 teams.
+            </ListItem>
+            <ListItem>
+              Book and compete in local escape rooms.
             </ListItem>
             <ListItem>
               Plan additional sessions for competing in online "Puzzle Hunts."
@@ -621,24 +604,6 @@ const Home = () => (
             <ListItem>
               Lead meetings and collaboration of executive team.
             </ListItem>
-            <ListItem>
-              Coordinate team writing puzzles for upcoming "Brown Puzzle Hunt."
-            </ListItem>
-            {/* <ListItem>
-              Developing the{' '}
-              <Link href="http://brownpuzzleclub.com/" target="_blank">
-                front-facing website
-              </Link>{' '}
-              and{' '}
-              <Link
-                href="http://obloomfield.pythonanywhere.com/"
-                target="_blank"
-              >
-                competition website
-              </Link>
-              . Both are WIP
-            </ListItem> */}
-            {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
           </UnorderedList>
         </Box>
 
@@ -654,7 +619,7 @@ const Home = () => (
           </Center>
           <Center>
             <Text fontSize={'lg'}>
-              <b>Business Manager</b>
+              <b>Co-Preseident</b>
             </Text>
           </Center>
           <Center>
@@ -784,6 +749,9 @@ const Home = () => (
           C#
         </Badge>
         <Badge colorScheme={'white'} mr={2}>
+          C++
+        </Badge>
+        <Badge colorScheme={'white'} mr={2}>
           Javascript
         </Badge>
         <Badge colorScheme={'white'} mr={2}>
@@ -793,16 +761,31 @@ const Home = () => (
           Python
         </Badge>
         <Badge colorScheme={'white'} mr={2}>
+          Django
+        </Badge>
+        <Badge colorScheme={'white'} mr={2}>
+          Flask
+        </Badge>
+        <Badge colorScheme={'white'} mr={2}>
           React
+        </Badge>
+        <Badge colorScheme={'white'} mr={2}>
+          Next.js
+        </Badge>
+        <Badge colorScheme={'white'} mr={2}>
+          Express.js
         </Badge>
         <Badge colorScheme={'white'} mr={2}>
           Node.js
         </Badge>
         <Badge colorScheme={'white'} mr={2}>
-          Golang
+          THREE.js
         </Badge>
         <Badge colorScheme={'white'} mr={2}>
-          C++
+          OpenGL
+        </Badge>
+        <Badge colorScheme={'white'} mr={2}>
+          Golang
         </Badge>
         <Badge colorScheme={'white'} mr={2}>
           Machine Learning
@@ -814,22 +797,28 @@ const Home = () => (
           Numpy
         </Badge>
         <Badge colorScheme={'white'} mr={2}>
-          SQL
+          SQLite
+        </Badge>
+        <Badge colorScheme={'white'} mr={2}>
+          PostgreSQL
+        </Badge>
+        <Badge colorScheme={'white'} mr={2}>
+          AWS Serverless
+        </Badge>
+        <Badge colorScheme={'white'} mr={2}>
+          AWS CDK
+        </Badge>
+        <Badge colorScheme={'white'} mr={2}>
+          AWS Lambda
+        </Badge>
+        <Badge colorScheme={'white'} mr={2}>
+          AWS SNN
         </Badge>
         <Badge colorScheme={'white'} mr={2}>
           Docker
         </Badge>
         <Badge colorScheme={'white'} mr={2}>
           Git
-        </Badge>
-        <Badge colorScheme={'white'} mr={2}>
-          DeFi
-        </Badge>
-        <Badge colorScheme={'white'} mr={2}>
-          Cryptography
-        </Badge>
-        <Badge colorScheme={'white'} mr={2}>
-          Cybersecurity
         </Badge>
         <Badge colorScheme={'white'} mr={2}>
           Unit Testing

@@ -24,7 +24,10 @@ const Puzzles = () => (
       <br></br><br></br>
       To build a community of likeminded puzzlers on my campus, I founded 
       <i> Brown Puzzle Club</i>, 
-      where we meet weekly to tackle beginner to intermediate puzzles and prepare an upcoming puzzle hunt of our own. 
+      where we meet weekly to tackle beginner to intermediate puzzles and prepare a puzzle hunt of our own. 
+      We successfully ran <Link href="projects/bph"><i>Brown Puzzlehunt</i></Link> for 120+ teams in Spring 2023,
+      and are currently working on our second iteration for 2024.
+      <br></br><br></br>
       Before college, I directed my high school puzzle hunt, <i>PEA Puzzle Hunt,</i> for three iterations, 
       (Spring 2020, Summer 2020, Spring 2021) leading the design, logistics, testing, and writing teams involved.
 
@@ -35,9 +38,9 @@ const Puzzles = () => (
                 All My Puzzles
               </Button>
             </Link>
-            <Link href="https://www.peapuzzlehunt.com/rabble-meta-1" target='_blank'>
+            <Link href="https://www.brownpuzzlehunt.com/round/dear-blueno" target='_blank'>
               <Button colorScheme="teal">
-                PEA Puzzle Hunt Sample
+                Brown Puzzlehunt Sample
               </Button>
             </Link>
 
