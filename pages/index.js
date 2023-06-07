@@ -5,8 +5,8 @@ import {
   Button,
   Center,
   Container,
-  Heading,
   HStack,
+  Heading,
   Icon,
   Image,
   Link,
@@ -188,10 +188,10 @@ const Home = () => (
               <i>
                 <b>Relevant Coursework:</b>
               </i>{' '}
-              <br></br>Deep Learning, Advanced Computer Graphics, Graduate Computer
-              Graphics, Software Engineering, Computational Molecular Bio.,
-              Recent Applications of Probability and Statistics, Honors Linear
-              Algebra
+              <br></br>Deep Learning, Advanced Computer Graphics, Graduate
+              Computer Graphics, Software Engineering, Computational Molecular
+              Bio., Recent Applications of Probability and Statistics, Honors
+              Linear Algebra
             </ListItem>
           </UnorderedList>
         </Box>
@@ -201,7 +201,7 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Current Projects
         </Heading>
-        <WorkingOn/>
+        <WorkingOn />
       </Section>
 
       <Section delay={0.25}>
@@ -236,9 +236,18 @@ const Home = () => (
             </Text>
           </Center>
           <UnorderedList ml="30px" fontSize={'sm'}>
-            <ListItem>Building new automation features on critical AWS Support dashboards.</ListItem>
-            <ListItem>Working on AWS Serverless CDK in Python to deliver new lambda and SNS features to the service.</ListItem>
-            <ListItem>Developing new feature visibility on a Cloudscape dashboard frontend</ListItem>
+            <ListItem>
+              Building new automation features on critical AWS Support
+              dashboards.
+            </ListItem>
+            <ListItem>
+              Working on AWS Serverless CDK in Python to deliver new lambda and
+              SNS features to the service.
+            </ListItem>
+            <ListItem>
+              Developing new feature visibility on a Cloudscape dashboard
+              frontend
+            </ListItem>
           </UnorderedList>
         </Box>
         <Box
@@ -586,18 +595,18 @@ const Home = () => (
           </Center>
           <UnorderedList ml="30px" fontSize={'sm'}>
             <ListItem>
-              Plan weekly meetings for ~20 regular members on
-              self-made or curated online word and logic puzzles. <br></br>
+              Plan weekly meetings for ~20 regular members on self-made or
+              curated online word and logic puzzles. <br></br>
               <Text fontSize={'xs'}>
                 (More information on <Link href="/puzzles">Puzzles</Link> page!)
               </Text>
             </ListItem>
             <ListItem>
-              Handle overarching organization, tech for <Link href={`/projects/bph`}>Brown Puzzle Hunt</Link>, attracting 650+ unique participants across 123 teams.
+              Handle overarching organization, tech for{' '}
+              <Link href={`/projects/bph`}>Brown Puzzle Hunt</Link>, attracting
+              650+ unique participants across 123 teams.
             </ListItem>
-            <ListItem>
-              Book and compete in local escape rooms.
-            </ListItem>
+            <ListItem>Book and compete in local escape rooms.</ListItem>
             <ListItem>
               Plan additional sessions for competing in online "Puzzle Hunts."
             </ListItem>
@@ -619,7 +628,7 @@ const Home = () => (
           </Center>
           <Center>
             <Text fontSize={'lg'}>
-              <b>Co-Preseident</b>
+              <b>Co-President</b>
             </Text>
           </Center>
           <Center>
