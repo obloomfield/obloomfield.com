@@ -237,16 +237,13 @@ const Home = () => (
           </Center>
           <UnorderedList ml="30px" fontSize={'sm'}>
             <ListItem>
-              Building new automation features on critical AWS Support
-              dashboards.
+            Built new features on support dashboard with over 100,000 active users to sync event progress with internal task boards.
             </ListItem>
             <ListItem>
-              Working on AWS Serverless CDK in Python to deliver new lambda and
-              SNS features to the service.
+            Created AWS Serverless CDK Typescript pipeline for deploying business logic via new Lambdas and event streams.
             </ListItem>
             <ListItem>
-              Developing new feature visibility on a Cloudscape dashboard
-              frontend
+            Optimized internal task board API client to batch edits together, reducing latency by 5x, allowing for real-time sync
             </ListItem>
           </UnorderedList>
         </Box>
@@ -279,14 +276,11 @@ const Home = () => (
           </Center>
           <UnorderedList ml="30px" fontSize={'sm'}>
             <ListItem>
-              Created a vscode extension from scratch, utilizing language
-              modeling to generate code actions that will elevate customer
-              experience for an upcoming Azure SaaS product.
+            Built vscode extension with language modeling for enhanced code actions, elevating Azure IaaS customer experience.
             </ListItem>
             <ListItem>
-              Implemented code completion, navigation, and error handling in a
-              C# backend service, communicating to the client as well as other
-              Azure microservices through a JSON-RPC language server protocol
+            Implemented code completion, navigation, and error handling in a C# backend service, communicating to the client as well
+as other Azure microservices through a JSON-RPC language server protocol
             </ListItem>
           </UnorderedList>
         </Box>
@@ -319,7 +313,7 @@ const Home = () => (
           </Center>
           <UnorderedList ml="30px" fontSize={'sm'}>
             <ListItem>
-              Building a{' '}
+              Built a{' '}
               <Link href="https://pep-prot.herokuapp.com/" target="_blank">
                 webapp
               </Link>{' '}
@@ -334,9 +328,7 @@ const Home = () => (
             </ListItem>
             <ListItem>
               {' '}
-              Outfitting public RESTful API hooks as well as database filtering
-              and downloading to help researchers search, curate, and collect
-              data scrutinizing any parameter
+              Set up RESTful API hooks and database filters for efficient parameter-specific data collection by researchers.
             </ListItem>
           </UnorderedList>
         </Box>
@@ -371,7 +363,7 @@ const Home = () => (
             <ListItem>
               Developed an{' '}
               <Link href="https://proteinarium.brown.edu" target="_blank">
-                interactive web application
+                interactive React application
               </Link>{' '}
               that generates multi-layer graph networks from protein
               interactomes.
@@ -394,6 +386,50 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Teaching
         </Heading>
+        <Box
+          borderRadius="lg"
+          mb={6}
+          p={3}
+          textAlign="left"
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        >
+          <Center>
+            <Icon as={FaCogs} w={8} h={8} />
+          </Center>
+          <Center>
+            <Text fontSize={'lg'}>
+              <b>Teaching Assistant</b>
+            </Text>
+          </Center>
+          <Center>
+            <Text fontSize={'lg'}>
+              <Link href="https://cs1230.graphics/" target="_blank">
+                CSCI1230 - Introduction to Computer Graphics
+              </Link>
+            </Text>
+          </Center>
+          <Center>
+            <Text fontSize={'md'}>
+              <i>Brown U. Dept of Computer Science | September 2023 - December 2023</i>
+            </Text>
+          </Center>
+          <UnorderedList ml="30px" fontSize={'sm'}>
+            <ListItem>
+              Conduct weekly office hours and grading check-ins for students.
+            </ListItem>
+            <ListItem>
+              created {' '}
+              <Link href="https://scenes.cs1230.graphics/" target="_blank">
+              scene viewer
+              </Link>
+              {' '}webapp for enhanced 3D scene rendering learning
+            </ListItem>
+            <ListItem>
+              automated grading scene similarity through computer vision techniques
+            </ListItem>
+            {/* <ListItem >Building an interactive web application that generates multi-layer graph networks from protein-protein interaction data with various analytic frameworks</ListItem>   */}
+          </UnorderedList>
+        </Box>
         <Box
           borderRadius="lg"
           mb={6}
