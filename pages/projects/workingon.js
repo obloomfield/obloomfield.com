@@ -5,8 +5,8 @@ import {
   Button,
   Center,
   Container,
-  Heading,
   HStack,
+  Heading,
   Icon,
   Image,
   Link,
@@ -27,6 +27,7 @@ import thumbProj2 from '../../public/images/links/acap.png'
 import thumbProj0 from '../../public/images/links/bph.png'
 import thumbProj1 from '../../public/images/links/desktop-world.png'
 import thumbProj3 from '../../public/images/links/prot2.png'
+import thumbProj4 from '../../public/images/links/scene-viewer.png'
 
 export default function WorkingOn() {
   return <SimpleGrid columns={[1, 2, 2]} gap={6}>
@@ -42,7 +43,7 @@ export default function WorkingOn() {
     <Meta colorScheme="purple">Django</Meta>
     <Meta colorScheme="blue">JavaScript</Meta>
   </WorkGridItem>
-  <WorkGridItem
+  {/* <WorkGridItem
     id="desktop-world"
     title="Desktop World"
     thumbnail={thumbProj1}
@@ -52,6 +53,18 @@ export default function WorkingOn() {
     <br></br>
     <Meta colorScheme="purple">Node.js</Meta>
     <Meta colorScheme="blue">JavaScript</Meta>
+    <Meta colorScheme="blue">Three.js</Meta>
+    <Meta colorScheme="blue">GLSL</Meta>
+  </WorkGridItem> */}
+  <WorkGridItem
+    id="scene-viewer"
+    title="Scenes"
+    thumbnail={thumbProj4}
+  >
+    Interactive 3D Scene Editor. 
+    <br></br>
+    <Meta colorScheme="blue">Typescript</Meta>
+    <Meta colorScheme="blue">React</Meta>
     <Meta colorScheme="blue">Three.js</Meta>
     <Meta colorScheme="blue">GLSL</Meta>
   </WorkGridItem>

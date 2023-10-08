@@ -29,7 +29,7 @@ const Projects = () => (
 
       <WorkingOn />
 
-      <Section delay={0.2}>
+      {/* <Section delay={0.2}>
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
@@ -65,7 +65,7 @@ const Projects = () => (
             <Meta colorScheme="purple">OpenGL</Meta>
             <Meta colorScheme="blue">Blender</Meta>
           </WorkGridItem>
-        </Section>
+        </Section> */}
         
         {/* <Section delay={0.3}>
           <WorkGridItem
@@ -78,7 +78,7 @@ const Projects = () => (
             <Meta colorScheme="red">Golang</Meta>
           </WorkGridItem>
         </Section> */}
-      </SimpleGrid>
+      {/* </SimpleGrid> */}
 
       <Section delay={0.4}>
         <Divider my={6} />
@@ -89,6 +89,21 @@ const Projects = () => (
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <Section delay={0.3}>
+          <WorkGridItem
+            id="desktop-world"
+            title="Desktop World"
+            thumbnail={projIcon0}
+          >
+            Procedural landscape in a bowl - using custom shaders, boids,
+            selective bloom.
+            <br></br>
+            <Meta colorScheme="purple">Node.js</Meta>
+            <Meta colorScheme="blue">JavaScript</Meta>
+            <Meta colorScheme="blue">Three.js</Meta>
+            <Meta colorScheme="blue">GLSL</Meta>
+          </WorkGridItem>
+      </Section>
       <Section delay={0.5}>
       <WorkGridItem id="pepbard" title="pep-BARD" thumbnail={projIcon1}>
           Interactive data viewer for a curated set of protein-peptide
@@ -142,7 +157,7 @@ const Projects = () => (
             <Meta colorScheme="blue">Wix</Meta>
           </WorkGridItem>
         </Section>
-        <Section delay={0.6}>
+        {/* <Section delay={0.6}>
           <WorkGridItem
             id="peaph-archive"
             thumbnail={projIcon9}
@@ -153,7 +168,7 @@ const Projects = () => (
             <br></br>
             <Meta colorScheme="blue">Jekyll</Meta>
           </WorkGridItem>
-        </Section>
+        </Section> */}
         <Section delay={0.6}>
           <WorkGridItem id="pseq" thumbnail={projIcon10} title="pSeq">
             Rough HTML prototype of an automatic p-element insertion finder
